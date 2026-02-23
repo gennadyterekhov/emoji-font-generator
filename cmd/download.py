@@ -1,6 +1,6 @@
 
-from lirbantu.src.config.config import get_usable_emojis
-from lirbantu.src.emoji_to_svg import emoji_to_svg
+from lirbantu.config.config import get_usable_emojis
+from lirbantu.emoji_to_svg import emoji_to_svg
 
 
 def main():
