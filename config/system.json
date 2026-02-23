@@ -1,5 +1,36 @@
 {
-        "emojis for logic": [],
+        "emojis for logic": [
+                {
+                        "meaning": "and",
+                        "name": "and",
+                        "characters": "-"
+                },
+                {
+                        "meaning": "or",
+                        "name": "or",
+                        "characters": "|"
+                },
+                {
+                        "meaning": "not",
+                        "name": "not",
+                        "characters": "x"
+                },
+                {
+                        "meaning": "genitive",
+                        "name": "genitive",
+                        "characters": "<"
+                },
+                {
+                        "meaning": "accusative",
+                        "name": "accusative",
+                        "characters": ">"
+                },
+                {
+                        "meaning": "instrumental",
+                        "name": "instrumental",
+                        "characters": "||"
+                }
+        ],
         "emojis for grammar": [],
         "emojis for pic": [
                 "😀",
