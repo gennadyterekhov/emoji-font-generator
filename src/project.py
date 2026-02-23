@@ -1,6 +1,8 @@
 import os
 from pathlib import Path
 from typing import Optional
+import json
+from pathlib import Path
 
 
 # def get_project_dir() -> str:
@@ -55,3 +57,14 @@ def get_project_dir() -> Path:
     directory containing this file.
     """
     return find_project_dir()
+
+
+def write_json_file(path: Path | str, data) -> None:
+    with open(path, "w") as f:
+        json.dump(data, f, indent=4)
+
+
+def read_json_file(path: Path | str):
+    with open(path) as json_file:
+        data = json.load(json_file)
+    return data
