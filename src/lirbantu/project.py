@@ -61,7 +61,7 @@ def get_project_dir() -> Path:
 
 def write_json_file(path: Path | str, data) -> None:
     with open(path, "w") as f:
-        json.dump(data, f, indent=4)
+        json.dump(data, f, indent=4,ensure_ascii=False)
 
 
 def read_json_file(path: Path | str):
