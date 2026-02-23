@@ -6,7 +6,11 @@ from lirbantu.emoji_to_svg import emoji_to_svg
 def main():
     emojis = get_usable_emojis()
     for emoji in emojis:
-        emoji_to_svg(emoji)
+        success=emoji_to_svg(emoji)
+        if success:
+            print('.',end='')
+        else:
+            print('-', end='')
 
 if __name__ == '__main__':
     main()

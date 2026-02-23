@@ -15,7 +15,7 @@ def emoji_to_svg(emoji_char, output_path=None, cache_dir=None):
     codepoint = format(ord(emoji_char), 'x')
     if output_path is None:
         root = get_project_dir()
-        output_path = f'{root}/emojis/{codepoint}.svg'
+        output_path = f'{root}/emojis/twemoji/{codepoint}.svg'
 
     if Path(output_path).exists():
         return True
@@ -36,5 +36,5 @@ def emoji_to_svg(emoji_char, output_path=None, cache_dir=None):
         return True
 
     except requests.RequestException as e:
-        print(f"Error downloading emoji: {e}")
+        # print(f"Error downloading emoji: {e}")
         return False
