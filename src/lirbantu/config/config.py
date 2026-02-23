@@ -1,4 +1,4 @@
-from lirbantu.src.project import get_project_dir, read_json_file
+from lirbantu.project import get_project_dir, read_json_file
 
 
 def get_config():
