@@ -11,8 +11,9 @@ from lirbantu.project import read_json_file
 def main():
     words=read_json_file(Path("ai_output.json"))
 
-    for w in words:
+    for i,w in enumerate(words):
         try:
+            print(f'processing {w["wordform"]}, {i}/{len(words)}')
             combine4(w['wordform'],[
                 w['root1_emoji'],
                 w['root2_emoji'],
