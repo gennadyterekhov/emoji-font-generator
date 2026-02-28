@@ -11,6 +11,9 @@ def test_codepoint():
     cdp = get_twemoji_codepoint('👎')
     assert (cdp == '1f44e')
 
+    cdp = get_twemoji_codepoint('🇧🇭')
+    assert (cdp == '1f1e7-1f1ed')
+
 
 def main():
     test_codepoint()
