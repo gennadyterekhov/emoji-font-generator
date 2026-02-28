@@ -25,6 +25,7 @@ def emoji_to_svg(emoji_char, output_path=None, cache_dir=None):
     url = f"https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/{codepoint}.svg"
 
     try:
+        print(f'Downloading twemoji... {url}')
         response = requests.get(url, timeout=10)
         response.raise_for_status()
 
@@ -36,7 +37,7 @@ def emoji_to_svg(emoji_char, output_path=None, cache_dir=None):
         return True
 
     except requests.RequestException as e:
-        # print(f"Error downloading emoji: {e}")
+        print(f"Error downloading emoji: {e}")
         return False
 
 
