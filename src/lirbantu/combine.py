@@ -1,11 +1,11 @@
 import xml.etree.ElementTree as ET
 
-from lirbantu.helpers import get_emoji_svg_path_or_throw
+from lirbantu.helpers import get_emoji_svg_path_or_throw, get_logic_svg_path_or_throw, get_grammar_svg_path_or_throw
 from lirbantu.project import get_project_dir
 import os
 
 
-def combine4(emojis: list[str]):
+def combine4(wordform: str, emojis: list[str]):
     if len(emojis) != 4:
         raise ValueError('Emojis must have exactly 4 characters')
     ET.register_namespace('', "http://www.w3.org/2000/svg")
@@ -21,7 +21,11 @@ def combine4(emojis: list[str]):
     })
 
     prefix = get_project_dir()
-    paths = [get_emoji_svg_path_or_throw(em) for em in emojis]
+    pic1 = get_emoji_svg_path_or_throw(emojis[0])
+    pic2 = get_emoji_svg_path_or_throw(emojis[1])
+    logic = get_logic_svg_path_or_throw(emojis[2])
+    grammar = get_grammar_svg_path_or_throw(emojis[3])
+    paths = [pic1, pic2, logic, grammar]
     fname = '_'.join(emojis)
 
     x_offsets = [0, 200, 0, 200]
@@ -38,4 +42,4 @@ def combine4(emojis: list[str]):
     tree = ET.ElementTree(root)
     tree.write(f'{prefix}/emojis/combined/temp.xml', encoding='utf-8', xml_declaration=True)
 
-    os.rename(f'{prefix}/emojis/combined/temp.xml', f'{prefix}/emojis/combined/{fname}.svg')
+    os.rename(f'{prefix}/emojis/combined/temp.xml', f'{prefix}/emojis/combined/{wordform}.svg')
