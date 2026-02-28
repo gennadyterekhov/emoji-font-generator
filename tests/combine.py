@@ -1,4 +1,4 @@
-from lirbantu.combine import combine4, combine_wordform
+from lirbantu.combine import  combine_wordform
 from lirbantu.config.config import get_wordform_from_ai_dictionary
 from lirbantu.helpers import get_twemoji_codepoint
 

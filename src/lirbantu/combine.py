@@ -6,6 +6,16 @@ import os
 
 
 def combine_wordform(wordform: dict):
+    logic = wordform.get("logic", 'genitive')
+    grammar = wordform.get("grammar", 'noun')
+    description = wordform.get('description', '')
+
+    if logic == 'genitive' and grammar == 'noun':
+        return combine2(wordform['wordform'], [wordform['root1_emoji'], wordform['root2_emoji'], ], description)
+
+    if logic == 'accusative' and grammar == 'infinitive':
+        return combine3(wordform['wordform'], [wordform['root1_emoji'], wordform['root2_emoji'], logic], description)
+
     return combine4(
         wordform['wordform'],
         [
@@ -14,11 +24,105 @@ def combine_wordform(wordform: dict):
             wordform['logic'],
             wordform['grammar'],
         ],
-        wordform['description'],
+        description,
     )
 
 
 def combine4(wordform: str, emojis: list[str], description=''):
+    if len(emojis) != 4:
+        raise ValueError('Emojis must have exactly 4 characters')
+    ET.register_namespace('', "http://www.w3.org/2000/svg")
+    ET.register_namespace('xlink', "http://www.w3.org/1999/xlink")
+
+    root = ET.Element('{http://www.w3.org/2000/svg}svg', {
+        'width': '400',
+        'height': '400',
+        'viewBox': '0 0 400 400',
+        'version': '1.1',
+        # 'xmlns': 'http://www.w3.org/2000/svg',
+        # 'xmlns:xlink': 'http://www.w3.org/1999/xlink'
+    })
+    comment = ET.Comment(f'description: {description} ')
+    root.append(comment)
+
+    prefix = get_project_dir()
+    pic1 = get_emoji_svg_path_or_throw(emojis[0])
+    pic2 = get_emoji_svg_path_or_throw(emojis[1])
+    logic = get_logic_svg_path_or_throw(emojis[2])
+    grammar = get_grammar_svg_path_or_throw(emojis[3])
+    paths = [pic1, pic2, logic, grammar]
+    fname = '_'.join(emojis)
+    center_offset = 75
+    x_offsets = [0, 200, 0 + center_offset, 200 + center_offset]
+    y_offsets = [0, 0, 200 + center_offset, 200 + center_offset]
+
+    for i, file in enumerate(paths):
+        tree = ET.parse(file)
+        svg_root = tree.getroot()
+
+        for element in svg_root:
+            translate = f'translate({x_offsets[i]}, {y_offsets[i]})'
+            scale = f'scale(5, 8)'
+            if i < 2:
+                element.set('transform', f'{translate} {scale}')
+            else:
+                element.set('transform', f'{translate}')
+            root.append(element)
+
+    tree = ET.ElementTree(root)
+    tree.write(f'{prefix}/emojis/combined/temp.xml', encoding='utf-8', xml_declaration=True)
+
+    os.rename(f'{prefix}/emojis/combined/temp.xml', f'{prefix}/emojis/combined/{wordform}.svg')
+
+
+def combine2(wordform: str, emojis: list[str], description=''):
+    if len(emojis) != 4:
+        raise ValueError('Emojis must have exactly 4 characters')
+    ET.register_namespace('', "http://www.w3.org/2000/svg")
+    ET.register_namespace('xlink', "http://www.w3.org/1999/xlink")
+
+    root = ET.Element('{http://www.w3.org/2000/svg}svg', {
+        'width': '400',
+        'height': '400',
+        'viewBox': '0 0 400 400',
+        'version': '1.1',
+        # 'xmlns': 'http://www.w3.org/2000/svg',
+        # 'xmlns:xlink': 'http://www.w3.org/1999/xlink'
+    })
+    comment = ET.Comment(f'description: {description} ')
+    root.append(comment)
+
+    prefix = get_project_dir()
+    pic1 = get_emoji_svg_path_or_throw(emojis[0])
+    pic2 = get_emoji_svg_path_or_throw(emojis[1])
+    logic = get_logic_svg_path_or_throw(emojis[2])
+    grammar = get_grammar_svg_path_or_throw(emojis[3])
+    paths = [pic1, pic2, logic, grammar]
+    fname = '_'.join(emojis)
+    center_offset = 75
+    x_offsets = [0, 200, 0 + center_offset, 200 + center_offset]
+    y_offsets = [0, 0, 200 + center_offset, 200 + center_offset]
+
+    for i, file in enumerate(paths):
+        tree = ET.parse(file)
+        svg_root = tree.getroot()
+
+        for element in svg_root:
+            translate = f'translate({x_offsets[i]}, {y_offsets[i]})'
+            scale = f'scale(5, 8)'
+            if i < 2:
+                element.set('transform', f'{translate} {scale}')
+            else:
+                element.set('transform', f'{translate}')
+            root.append(element)
+
+    tree = ET.ElementTree(root)
+    tree.write(f'{prefix}/emojis/combined/temp.xml', encoding='utf-8', xml_declaration=True)
+
+    os.rename(f'{prefix}/emojis/combined/temp.xml', f'{prefix}/emojis/combined/{wordform}.svg')
+
+
+def combine3(wordform: str, emojis: list[str], description=''):
     if len(emojis) != 4:
         raise ValueError('Emojis must have exactly 4 characters')
     ET.register_namespace('', "http://www.w3.org/2000/svg")
