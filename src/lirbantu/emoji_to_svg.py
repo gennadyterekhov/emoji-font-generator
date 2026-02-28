@@ -13,6 +13,7 @@ def emoji_to_svg(emoji_char, output_path=None):
         root = get_project_dir()
         output_path = f'{root}/emojis/twemoji/{codepoint}.svg'
     if Path(output_path).exists():
+        print('Already exists')
         return True
 
     # Otherwise, download from Twemoji (Twitter's open-source emoji set)
