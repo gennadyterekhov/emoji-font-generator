@@ -71,7 +71,7 @@ def combine3(wordform: str, emojis: list[str], description=''):
     paths = [pic1, pic2, logic]
     fname = '_'.join(emojis)
     center_offset = 75
-    x_offsets = [0, 200, 300, ]
+    x_offsets = [0, 200, 200, ]
     y_offsets = [0, 0, 200 + center_offset, ]
 
     for i, file in enumerate(paths):
