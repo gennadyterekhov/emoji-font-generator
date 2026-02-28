@@ -4,14 +4,14 @@ from lirbantu.project import get_project_dir
 
 
 def get_emoji_svg_path(emoji_char: str) -> str:
-    codepoint = format(ord(emoji_char), 'x')
+    codepoint = get_twemoji_codepoint(emoji_char)
     root = get_project_dir()
     return f'{root}/emojis/twemoji/{codepoint}.svg'
 
 
 def get_emoji_svg_path_or_throw(emoji_char: str) -> str:
     root = get_project_dir()
-    codepoint = format(ord(emoji_char), 'x')
+    codepoint = get_twemoji_codepoint(emoji_char)
     path = f'{root}/emojis/twemoji/{codepoint}.svg'
     if Path(path).exists():
         return path
@@ -32,3 +32,11 @@ def get_logic_svg_path_or_throw(logic: str) -> str:
     if Path(path).exists():
         return path
     raise Exception(f'Could not find svg {path}')
+
+
+def get_twemoji_codepoint(emoji_char, ):
+    total = ''
+    for char in emoji_char:
+        codepoint = format(ord(char), 'x')
+        total += f'-' + codepoint
+    return total[1:]

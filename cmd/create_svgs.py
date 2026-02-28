@@ -10,10 +10,14 @@ from lirbantu.project import read_json_file, get_project_dir
 def main():
     root = get_project_dir()
     words = read_json_file(f"{root}/config/ai_output.json")
+    prefix = f'{root}/emojis/combined'
     failures = 0
     for i, w in enumerate(words):
         try:
             print(f'processing {w["wordform"]}, {i}/{len(words)}')
+            wordform = w["wordform"]
+            if Path(f'{prefix}/{wordform}.svg').exists():
+                continue
             combine4(w['wordform'], [
                 w['root1_emoji'],
                 w['root2_emoji'],

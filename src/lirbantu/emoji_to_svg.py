@@ -4,6 +4,7 @@ import time
 import requests
 from pathlib import Path
 
+from lirbantu.helpers import get_twemoji_codepoint
 from lirbantu.project import get_project_dir
 
 
@@ -38,9 +39,3 @@ def emoji_to_svg(emoji_char, output_path=None):
         return False
 
 
-def get_twemoji_codepoint(emoji_char, ):
-    total = ''
-    for char in emoji_char:
-        codepoint = format(ord(char), 'x')
-        total += f'-' + codepoint
-    return total[1:]
