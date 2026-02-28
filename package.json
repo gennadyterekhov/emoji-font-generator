@@ -1,0 +1,19 @@
+{
+  "name": "lirbantu",
+  "version": "1.0.0",
+  "description": "для примера языка используется lirbantu",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+          "create_with_ifont": "node cmd/create_with_ifont.js"
+  },
+  "dependencies": {
+    "ifont": "^1.0.3"
+  }
+}
