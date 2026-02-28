@@ -15,7 +15,7 @@ def get_emoji_svg_path_or_throw(emoji_char: str) -> str:
     path = f'{root}/emojis/twemoji/{codepoint}.svg'
     if Path(path).exists():
         return path
-    raise Exception(f'Could not find svg {path}')
+    raise Exception(f'Could not find svg for {emoji_char} in {path}')
 
 
 def get_grammar_svg_path_or_throw(grammar: str) -> str:
@@ -23,7 +23,7 @@ def get_grammar_svg_path_or_throw(grammar: str) -> str:
     path = f'{root}/emojis/grammar/{grammar}.svg'
     if Path(path).exists():
         return path
-    raise Exception(f'Could not find svg {path}')
+    raise Exception(f'Could not find svg for {grammar} in {path}')
 
 
 def get_logic_svg_path_or_throw(logic: str) -> str:
@@ -31,7 +31,7 @@ def get_logic_svg_path_or_throw(logic: str) -> str:
     path = f'{root}/emojis/logic/{logic}.svg'
     if Path(path).exists():
         return path
-    raise Exception(f'Could not find svg {path}')
+    raise Exception(f'Could not find svg for {logic} in {path}')
 
 
 def get_twemoji_codepoint(emoji_char, ):

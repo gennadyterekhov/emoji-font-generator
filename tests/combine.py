@@ -13,7 +13,7 @@ def test_combine():
     wf=get_wordform_from_ai_dictionary('хороший')
     combine_wordform(wf)
 
-    wf=get_wordform_from_ai_dictionary('строящий')
+    wf=get_wordform_from_ai_dictionary('верующий')
     combine_wordform(wf)
 
     # check that svg can be viewed in intellij idea
