@@ -3,7 +3,7 @@ create an SVG file for every word in ai_output.json
 """
 from pathlib import Path
 
-from lirbantu.combine import combine4
+from lirbantu.combine import combine4, combine_wordform
 from lirbantu.project import read_json_file, get_project_dir
 
 
@@ -18,12 +18,7 @@ def main():
             wordform = w["wordform"]
             if Path(f'{prefix}/{wordform}.svg').exists():
                 continue
-            combine4(w['wordform'], [
-                w['root1_emoji'],
-                w['root2_emoji'],
-                w['logic'],
-                w['grammar'],
-            ])
+            combine_wordform(w)
         except Exception as e:
             failures += 1
             print(e)

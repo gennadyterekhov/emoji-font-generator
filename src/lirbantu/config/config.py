@@ -1,3 +1,5 @@
+from typing import Any
+
 from lirbantu.project import get_project_dir, read_json_file
 
 
@@ -31,3 +33,13 @@ def get_emojis_used_by_ai() -> list:
     emojis.extend(emojis2)
     emojis = list(set(emojis))
     return emojis
+
+
+def get_wordform_from_ai_dictionary(wordform:str) -> dict | None:
+    root = get_project_dir()
+    path = f'{root}/config/ai_output.json'
+    words = read_json_file(path)
+    for w in words:
+        if w['wordform'] == wordform:
+            return w
+    return None

@@ -5,6 +5,15 @@ from lirbantu.project import get_project_dir
 import os
 
 
+def combine_wordform(wordform: dict):
+    return combine4(wordform['wordform'], [
+        wordform['root1_emoji'],
+        wordform['root2_emoji'],
+        wordform['logic'],
+        wordform['grammar'],
+    ])
+
+
 def combine4(wordform: str, emojis: list[str]):
     if len(emojis) != 4:
         raise ValueError('Emojis must have exactly 4 characters')
@@ -27,9 +36,9 @@ def combine4(wordform: str, emojis: list[str]):
     grammar = get_grammar_svg_path_or_throw(emojis[3])
     paths = [pic1, pic2, logic, grammar]
     fname = '_'.join(emojis)
-
-    x_offsets = [0, 200, 0, 200]
-    y_offsets = [0, 0, 200, 200]
+    center_offset = 75
+    x_offsets = [0, 200, 0 + center_offset, 200 + center_offset]
+    y_offsets = [0, 0, 200 + center_offset, 200 + center_offset]
 
     for i, file in enumerate(paths):
         tree = ET.parse(file)
@@ -37,7 +46,7 @@ def combine4(wordform: str, emojis: list[str]):
 
         for element in svg_root:
             translate = f'translate({x_offsets[i]}, {y_offsets[i]})'
-            scale = f'scale(5, 5)'
+            scale = f'scale(5, 8)'
             if i < 2:
                 element.set('transform', f'{translate} {scale}')
             else:
