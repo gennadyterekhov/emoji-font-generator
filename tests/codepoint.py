@@ -1,4 +1,4 @@
-from lirbantu.emoji_to_svg import get_twemoji_codepoint
+from lirbantu.helpers import get_twemoji_codepoint
 
 
 def test_codepoint():
