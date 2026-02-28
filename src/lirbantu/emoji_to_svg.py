@@ -7,16 +7,11 @@ from pathlib import Path
 from lirbantu.project import get_project_dir
 
 
-def emoji_to_svg(emoji_char, output_path=None, cache_dir=None):
-    if len(emoji_char) > 1:
-        return True
-
-    # Get the Unicode codepoint for the emoji (e.g., '1f60a' for 😊)
+def emoji_to_svg(emoji_char, output_path=None):
     codepoint = get_twemoji_codepoint(emoji_char)
     if output_path is None:
         root = get_project_dir()
         output_path = f'{root}/emojis/twemoji/{codepoint}.svg'
-
     if Path(output_path).exists():
         return True
 
@@ -25,7 +20,7 @@ def emoji_to_svg(emoji_char, output_path=None, cache_dir=None):
     url = f"https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/{codepoint}.svg"
 
     try:
-        print(f'Downloading twemoji... {url}')
+        print(f'Downloading twemoji for {emoji_char} = {codepoint} from {url}')
         response = requests.get(url, timeout=10)
         response.raise_for_status()
 
