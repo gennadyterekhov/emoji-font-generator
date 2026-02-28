@@ -12,7 +12,7 @@ def emoji_to_svg(emoji_char, output_path=None, cache_dir=None):
         return True
 
     # Get the Unicode codepoint for the emoji (e.g., '1f60a' for 😊)
-    codepoint = format(ord(emoji_char), 'x')
+    codepoint = get_twemoji_codepoint(emoji_char)
     if output_path is None:
         root = get_project_dir()
         output_path = f'{root}/emojis/twemoji/{codepoint}.svg'
@@ -38,3 +38,11 @@ def emoji_to_svg(emoji_char, output_path=None, cache_dir=None):
     except requests.RequestException as e:
         # print(f"Error downloading emoji: {e}")
         return False
+
+
+def get_twemoji_codepoint(emoji_char, ):
+    total = ''
+    for char in emoji_char:
+        codepoint = format(ord(char), 'x')
+        total += f'-' + codepoint
+    return total[1:]
