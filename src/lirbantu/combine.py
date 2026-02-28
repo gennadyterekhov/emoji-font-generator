@@ -36,7 +36,12 @@ def combine4(wordform: str, emojis: list[str]):
         svg_root = tree.getroot()
 
         for element in svg_root:
-            element.set('transform', f'translate({x_offsets[i]}, {y_offsets[i]})')
+            translate = f'translate({x_offsets[i]}, {y_offsets[i]})'
+            scale = f'scale(5, 5)'
+            if i < 2:
+                element.set('transform', f'{translate} {scale}')
+            else:
+                element.set('transform', f'{translate}')
             root.append(element)
 
     tree = ET.ElementTree(root)
