@@ -9,3 +9,4 @@ wheels/
 # Virtual environments
 .venv
 emojis
+node_modules

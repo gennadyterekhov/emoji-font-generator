@@ -24,10 +24,14 @@ def get_usable_emojis() -> list:
     return dct
 
 
-def get_emojis_used_by_ai() -> list:
+def get_ai_dictionary() -> list:
     root = get_project_dir()
     path = f'{root}/config/ai_output.json'
-    words = read_json_file(path)
+    return read_json_file(path)
+
+
+def get_emojis_used_by_ai() -> list:
+    words = get_ai_dictionary()
     emojis = [w['root1_emoji'] for w in words]
     emojis2 = [w['root2_emoji'] for w in words]
     emojis.extend(emojis2)
@@ -35,10 +39,9 @@ def get_emojis_used_by_ai() -> list:
     return emojis
 
 
-def get_wordform_from_ai_dictionary(wordform:str) -> dict | None:
-    root = get_project_dir()
-    path = f'{root}/config/ai_output.json'
-    words = read_json_file(path)
+def get_wordform_from_ai_dictionary(wordform: str) -> dict | None:
+    words = get_ai_dictionary()
+
     for w in words:
         if w['wordform'] == wordform:
             return w
