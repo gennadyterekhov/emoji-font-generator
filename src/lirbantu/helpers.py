@@ -10,9 +10,25 @@ def get_emoji_svg_path(emoji_char: str) -> str:
 
 
 def get_emoji_svg_path_or_throw(emoji_char: str) -> str:
-    codepoint = format(ord(emoji_char), 'x')
     root = get_project_dir()
+    codepoint = format(ord(emoji_char), 'x')
     path = f'{root}/emojis/twemoji/{codepoint}.svg'
+    if Path(path).exists():
+        return path
+    raise Exception(f'Could not find svg {path}')
+
+
+def get_grammar_svg_path_or_throw(grammar: str) -> str:
+    root = get_project_dir()
+    path = f'{root}/emojis/grammar/{grammar}.svg'
+    if Path(path).exists():
+        return path
+    raise Exception(f'Could not find svg {path}')
+
+
+def get_logic_svg_path_or_throw(logic: str) -> str:
+    root = get_project_dir()
+    path = f'{root}/emojis/logic/{logic}.svg'
     if Path(path).exists():
         return path
     raise Exception(f'Could not find svg {path}')
