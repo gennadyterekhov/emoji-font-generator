@@ -6,15 +6,19 @@ import os
 
 
 def combine_wordform(wordform: dict):
-    return combine4(wordform['wordform'], [
-        wordform['root1_emoji'],
-        wordform['root2_emoji'],
-        wordform['logic'],
-        wordform['grammar'],
-    ])
+    return combine4(
+        wordform['wordform'],
+        [
+            wordform['root1_emoji'],
+            wordform['root2_emoji'],
+            wordform['logic'],
+            wordform['grammar'],
+        ],
+        wordform['description'],
+    )
 
 
-def combine4(wordform: str, emojis: list[str]):
+def combine4(wordform: str, emojis: list[str], description=''):
     if len(emojis) != 4:
         raise ValueError('Emojis must have exactly 4 characters')
     ET.register_namespace('', "http://www.w3.org/2000/svg")
@@ -28,6 +32,8 @@ def combine4(wordform: str, emojis: list[str]):
         # 'xmlns': 'http://www.w3.org/2000/svg',
         # 'xmlns:xlink': 'http://www.w3.org/1999/xlink'
     })
+    comment = ET.Comment(f'description: {description} ')
+    root.append(comment)
 
     prefix = get_project_dir()
     pic1 = get_emoji_svg_path_or_throw(emojis[0])
