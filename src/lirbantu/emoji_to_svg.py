@@ -20,6 +20,7 @@ def emoji_to_svg(emoji_char, output_path=None):
     url = f"https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/{codepoint}.svg"
 
     try:
+        print()
         print(f'Downloading twemoji for {emoji_char} = {codepoint} from {url}')
         response = requests.get(url, timeout=10)
         response.raise_for_status()
