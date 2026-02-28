@@ -31,7 +31,7 @@ def combine_wordform(wordform: dict):
 def combine4(wordform: str, emojis: list[str], description=''):
     if len(emojis) != 4:
         raise ValueError('Emojis must have exactly 4 characters')
-    root = description()
+    root = get_svg_root(description)
 
     pic1 = get_emoji_svg_path_or_throw(emojis[0])
     pic2 = get_emoji_svg_path_or_throw(emojis[1])
