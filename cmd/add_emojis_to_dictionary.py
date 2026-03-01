@@ -10,7 +10,7 @@ from emoji_font_generator.llm.llm import ask_ai, get_prompt_for_one_word
 
 
 def add_emojis_to_one_word(api_key: str, model_name: str, base_url: str, word: dict) -> Optional[dict]:
-    data_for_prompt={
+    data_for_prompt = {
         "word": word['russian'],
         "logic": [
             "and",
@@ -35,11 +35,11 @@ def add_emojis_to_one_word(api_key: str, model_name: str, base_url: str, word: d
         ]
     }
     prompt = get_prompt_for_one_word(data_for_prompt)
-    ai_response = ask_ai(api_key, model_name, base_url, prompt)
     try:
+        ai_response = ask_ai(api_key, model_name, base_url, prompt)
         structured_response = json.loads(ai_response)
         if 'error' in structured_response:
-            print(f'could classify word {word}, error: {structured_response["error"]}')
+            print(f'error classifying word {word['lirbantu']}={word['russian']}, error: {structured_response["error"]}')
             return None
         word['root1'] = structured_response.get('root1', '')
         word['root2'] = structured_response.get('root2', '')
@@ -49,8 +49,8 @@ def add_emojis_to_one_word(api_key: str, model_name: str, base_url: str, word: d
         word['root2_emoji'] = structured_response.get('root2_emoji', '')
         word['description'] = structured_response.get('description', '')
 
-    except json.decoder.JSONDecodeError as e:
-        print(f'could not decode ai response for word {word}, error: {e}')
+    except Exception as e:
+        print(f'could not decode ai response for word {word['lirbantu']}={word['russian']}, error: {e}')
         return None
 
     return word
@@ -61,7 +61,7 @@ def add_emojis_to_dictionary(api_key: str, model_name: str, base_url: str) -> No
     updated = []
     # words are not unique (can have several orthographic variants or meaning), we must control uniqueness at app level
     used_words = set()
-    for i,word in enumerate(dct):
+    for i, word in enumerate(dct):
         if word['russian'] in used_words:
             continue
         if word['lirbantu'] in used_words:
