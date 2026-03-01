@@ -1,6 +1,5 @@
 from emoji_font_generator.combine import  combine_wordform
 from emoji_font_generator.config.config import get_wordform_from_ai_dictionary
-from emoji_font_generator.helpers import get_twemoji_codepoint
 
 
 def test_combine():
