@@ -2,6 +2,12 @@ from typing import Any
 
 from lirbantu.project import get_project_dir, read_json_file
 
+
+def get_lirbantu_font_filename():
+    root = get_project_dir()
+    return f'{root}/config/Nu_lirbantu_2025_04_14-Regular.ttf'
+
+
 def get_config():
     root = get_project_dir()
     path = f'{root}/config/config.json'
