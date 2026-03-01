@@ -1,13 +1,9 @@
 import os
 from pathlib import Path
 from typing import Optional
-import json
-from pathlib import Path
 
 
-# def get_project_dir() -> str:
-#     return os.path.abspath(os.path.dirname(__file__))
-def find_project_dir(start_path: Optional[str] = None) -> Path:
+def get_project_dir(start_path: Optional[str] = None) -> Path:
     """
     Find the project directory containing a pyproject.toml file.
 
@@ -45,26 +41,3 @@ def find_project_dir(start_path: Optional[str] = None) -> Path:
 
     # If not found, return the starting directory
     return current_path
-
-
-# Convenience function for common use case
-def get_project_dir() -> Path:
-    """
-    Get the project directory containing pyproject.toml.
-
-    Returns the directory containing pyproject.toml by searching upward from
-    the location of this file. If no pyproject.toml is found, returns the
-    directory containing this file.
-    """
-    return find_project_dir()
-
-
-def write_json_file(path: Path | str, data) -> None:
-    with open(path, "w") as f:
-        json.dump(data, f, indent=4,ensure_ascii=False)
-
-
-def read_json_file(path: Path | str):
-    with open(path) as json_file:
-        data = json.load(json_file)
-    return data

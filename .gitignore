@@ -8,5 +8,9 @@ wheels/
 
 # Virtual environments
 .venv
-emojis
-node_modules
+input/emojis/combined/*
+input/emojis/twemoji/*
+input/emojis/logic/old
+input/emojis/logic/new
+input/emojis/grammar/new
+input/emojis/grammar/old
