@@ -31,9 +31,9 @@ def ask_ai(api_key: str, model_name: str, base_url: str, prompt: str) -> str:
     return response
 
 
-def get_prompt_for_one_word(word: dict) -> str:
+def get_prompt_for_one_word(input_data: dict) -> str:
     root = get_project_dir()
     path = f'{root}/input/llm/prompt_for_1_word.md'
     raw_prompt = read_md_file(path)
 
-    return raw_prompt.replace('{{{input_data}}}', json.dumps(word))
+    return raw_prompt.replace('{{{input_data}}}', json.dumps(input_data))

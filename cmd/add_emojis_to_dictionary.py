@@ -10,7 +10,31 @@ from emoji_font_generator.llm.llm import ask_ai, get_prompt_for_one_word
 
 
 def add_emojis_to_one_word(api_key: str, model_name: str, base_url: str, word: dict) -> Optional[dict]:
-    prompt = get_prompt_for_one_word(word)
+    data_for_prompt={
+        "word": word['russian'],
+        "logic": [
+            "and",
+            "or",
+            "not",
+            "genitive",
+            "accusative",
+            "instrumental"
+        ],
+        "grammar": [
+            "adv",
+            "adj",
+            "n",
+            "plural",
+            "v",
+            "imperative",
+            "pr part",
+            "past part",
+            "diminutive",
+            "augmentative",
+            "causative"
+        ]
+    }
+    prompt = get_prompt_for_one_word(data_for_prompt)
     ai_response = ask_ai(api_key, model_name, base_url, prompt)
     try:
         structured_response = json.loads(ai_response)
