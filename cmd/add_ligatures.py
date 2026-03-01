@@ -1,10 +1,15 @@
+import os
 import subprocess
 import tempfile
-import os
+
+from fontTools.misc.transform import Scale
+from fontTools.pens.transformPen import TransformPen
+from fontTools.pens.ttGlyphPen import TTGlyphPen
+from fontTools.svgLib import SVGPath
+from fontTools.ttLib import TTFont
 
 from lirbantu.config.config import get_ai_dictionary, get_lirbantu_font_filename
 from lirbantu.project import get_project_dir
-from fontTools.ttLib import TTFont, newTable
 
 
 def replace_ligature(ligature):
@@ -153,6 +158,182 @@ feature liga {
         os.unlink(feature_file)
 
 
+
+def add_svg_ligatures_to_font(input_font_path, ligature_dict, output_font_path):
+    """
+    Add SVG ligature glyphs to a font and create ligature substitutions
+
+    Args:
+        input_font_path: Path to input TTF/OTF font
+        ligature_dict: Dictionary mapping ligature names to SVG file paths
+        output_font_path: Path to save modified font
+    """
+    # Load the font
+    font = TTFont(input_font_path)
+
+    # Get font metrics
+    upm = font['head'].unitsPerEm
+    ascender = font['hhea'].ascent
+    descender = font['hhea'].descent
+
+    # Get existing glyph tables
+    glyf = font['glyf']
+    hmtx = font['hmtx']
+
+    # Track new glyphs and their components for ligature rules
+    new_glyphs = []
+    ligature_rules = []
+
+    for ligature_name, svg_path in ligature_dict.items():
+        ligature_name = replace_ligature(ligature_name)
+
+        print(f"Processing {ligature_name}...")
+
+        # Parse ligature components (e.g., "f_i" -> ["f", "i"])
+        components = ligature_name.split('_') if '_' in ligature_name else list(ligature_name)
+
+        # Convert SVG to glyph outline
+        glyph, advance_width = svg_to_glyph(
+            font,
+            svg_path,
+            upm,
+            ascender,
+            descender,
+            is_ttf=True  # Set to False for CFF fonts
+        )
+
+        # Add glyph to font
+        add_glyph_to_font(font, ligature_name, glyph, advance_width)
+        new_glyphs.append(ligature_name)
+
+        # Store ligature rule
+        ligature_rules.append((components, ligature_name))
+
+    # Add ligature substitutions to GSUB table
+    add_ligature_substitutions(font, ligature_rules)
+
+    # Save the font
+    font.save(output_font_path)
+    print(f"Font saved to {output_font_path}")
+
+def svg_to_glyph(font,svg_path, upm, ascender, descender, is_ttf=True):
+    """
+    Convert SVG file to glyph outline using fontTools.svgLib.SVGPath [citation:3][citation:6]
+    """
+    # Parse SVG and get its dimensions
+    svg = SVGPath(svg_path)
+
+    # Get SVG dimensions from viewBox or fallback to parsing
+    root = svg.root
+    viewBox = root.get('viewBox')
+
+    if viewBox:
+        x, y, width, height = map(float, viewBox.split())
+    else:
+        # Fallback: try to get width/height attributes
+        width = float(root.get('width', 1000))
+        height = float(root.get('height', 1000))
+        x = y = 0
+
+    # Calculate scale to fit font UPM
+    # Scale so height matches font's ascender-descender range
+    font_height = ascender - descender
+    scale = font_height / height
+
+    # Create transformation to position glyph correctly
+    # Flip Y axis (SVG Y increases downward, font Y increases upward)
+    transform = Scale(scale, -scale).translate(-x, -height)
+
+    # Create appropriate pen based on font type [citation:4]
+    if is_ttf:
+        # For TrueType (quadratic curves)
+        glyph_pen = TTGlyphPen(font.getGlyphSet())
+    else:
+        # For CFF (cubic curves) - would need T2CharStringPen
+        from fontTools.pens.t2CharStringPen import T2CharStringPen
+        glyph_pen = T2CharStringPen(upm, None)
+
+    # Wrap pen with transform
+    transform_pen = TransformPen(glyph_pen, transform)
+
+    # Draw SVG onto the pen
+    svg.draw(transform_pen)
+
+    # Get the glyph and calculate advance width
+    if is_ttf:
+        glyph = glyph_pen.glyph()
+        # Calculate advance width based on scaled SVG width
+        advance_width = int(width * scale)
+    else:
+        glyph = glyph_pen.getCharString()
+        advance_width = int(width * scale)
+
+    return glyph, advance_width
+
+def add_glyph_to_font(font, glyph_name, glyph, advance_width):
+    """
+    Add a new glyph to the font [citation:7]
+    """
+    # Update glyph order
+    glyph_order = list(font.getGlyphOrder())
+    if glyph_name not in glyph_order:
+        glyph_order.append(glyph_name)
+        font.setGlyphOrder(glyph_order)
+
+    # Add to glyf table
+    font['glyf'][glyph_name] = glyph
+
+    # Get left side bearing (minimum X coordinate)
+    if hasattr(glyph, 'xMin'):
+        lsb = glyph.xMin
+    else:
+        lsb = 0
+
+    # Add to horizontal metrics
+    font['hmtx'][glyph_name] = (advance_width, lsb)
+
+def add_ligature_substitutions(font, ligature_rules):
+    """
+    Add OpenType ligature substitutions to GSUB table
+    """
+    # Ensure GSUB table exists
+    if 'GSUB' not in font:
+        from fontTools.ttLib.tables import _G_S_U_B_
+        font['GSUB'] = _G_S_U_B_.table_G_S_U_B_()
+
+    # Create feature file content
+    feature_content = """languagesystem DFLT dflt;
+languagesystem latn dflt;
+
+feature liga {
+"""
+
+    for components, ligature_name in ligature_rules:
+        # Format: sub [component1] [component2] ... by ligature_name;
+        comp_str = ' '.join(components)
+        feature_content += f"    sub {comp_str} by {ligature_name};\n"
+
+    feature_content += "} liga;\n"
+
+    # Write temporary feature file
+    with tempfile.NamedTemporaryFile(mode='w', suffix='.fea', delete=False) as f:
+        f.write(feature_content)
+        feature_file = f.name
+
+    # Compile and add features
+    from fontTools.feaLib.builder import addOpenTypeFeatures
+    try:
+        addOpenTypeFeatures(font, feature_file)
+        print("Ligature features added successfully")
+    except Exception as e:
+        print(f"Error adding features: {e}")
+        print("Feature content:")
+        print(feature_content)
+    finally:
+        os.unlink(feature_file)
+
+
+
 def get_ligatures_map():
     rootdir = get_project_dir()
     dct = get_ai_dictionary()
@@ -174,4 +355,4 @@ rootdir = get_project_dir()
 
 ligatures = get_ligatures_map()
 output_filename = f'{rootdir}/output/nu_lirbantu_w_ligatures.ttf'
-add_ligatures_with_glyph_check(get_lirbantu_font_filename(), ligatures, output_filename)
+add_svg_ligatures_to_font(get_lirbantu_font_filename(), ligatures, output_filename)
