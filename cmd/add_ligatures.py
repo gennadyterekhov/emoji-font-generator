@@ -1,6 +1,7 @@
 import os
 import subprocess
 import tempfile
+from pathlib import Path
 
 from fontTools.misc.transform import Scale
 from fontTools.pens.transformPen import TransformPen
@@ -170,6 +171,7 @@ def add_svg_ligatures_to_font(input_font_path, ligature_dict, output_font_path):
     """
     # Load the font
     font = TTFont(input_font_path)
+    #font.setFontRevision('Nu Lirbantu With Emoji hieroglyphs in ligatures')
 
     # Get font metrics
     upm = font['head'].unitsPerEm
@@ -185,7 +187,12 @@ def add_svg_ligatures_to_font(input_font_path, ligature_dict, output_font_path):
     ligature_rules = []
 
     for ligature_name, svg_path in ligature_dict.items():
+        if ',' in ligature_name:
+            continue
         ligature_name = replace_ligature(ligature_name)
+        if not Path(svg_path).exists():
+            print(f"SVG file {svg_path} does not exist")
+            continue
 
         print(f"Processing {ligature_name}...")
 
@@ -193,13 +200,13 @@ def add_svg_ligatures_to_font(input_font_path, ligature_dict, output_font_path):
         components = ligature_name.split('_') if '_' in ligature_name else list(ligature_name)
 
         # Convert SVG to glyph outline
-        glyph, advance_width = svg_to_glyph(
+        glyph, advance_width = svg_to_glyph_with_picosvg(
             font,
             svg_path,
             upm,
             ascender,
             descender,
-            is_ttf=True  # Set to False for CFF fonts
+            #is_ttf=True  # Set to False for CFF fonts
         )
 
         # Add glyph to font
@@ -269,7 +276,44 @@ def svg_to_glyph(font,svg_path, upm, ascender, descender, is_ttf=True):
         advance_width = int(width * scale)
 
     return glyph, advance_width
+def svg_to_glyph_with_picosvg(font,svg_path, upm, ascender, descender):
+    """
+    Convert SVG to glyph using picosvg for better path handling
+    """
+    from picosvg.svg import SVG as picoSVG
+    from fontTools.pens.t2CharStringPen import T2CharStringPen
+    from fontTools.pens.transformPen import TransformPen
 
+    # Read and normalize SVG
+    with open(svg_path, 'r', encoding='utf-8-sig') as f:
+        svg_content = f.read()
+
+    # Convert to picosvg format (normalizes paths, removes transforms)
+    picosvg = picoSVG.fromstring(svg_content).topicosvg()
+
+    # Get viewBox
+    x, y, width, height = picosvg.view_box()
+
+    # Calculate scale
+    font_height = ascender - descender
+    scale = font_height / height
+
+    # Create pen for CFF outlines (cubic curves)
+    # pen = T2CharStringPen(upm, None)
+    pen = TTGlyphPen(font.getGlyphSet())
+    transform = Scale(scale, -scale).translate(-x, -height)
+    transform_pen = TransformPen(pen, transform)
+
+    # Draw
+    svg_pen = SVGPath(None)
+    svg_pen.root = picosvg.svg_root
+    svg_pen.draw(transform_pen)
+
+    # glyph = pen.getCharString()
+    glyph = pen.glyph()
+    advance_width = int(width * scale)
+
+    return glyph, advance_width
 def add_glyph_to_font(font, glyph_name, glyph, advance_width):
     """
     Add a new glyph to the font [citation:7]
@@ -292,14 +336,14 @@ def add_glyph_to_font(font, glyph_name, glyph, advance_width):
     # Add to horizontal metrics
     font['hmtx'][glyph_name] = (advance_width, lsb)
 
-def add_ligature_substitutions(font, ligature_rules):
+def add_ligature_substitutions_old(font, ligature_rules):
     """
     Add OpenType ligature substitutions to GSUB table
     """
     # Ensure GSUB table exists
     if 'GSUB' not in font:
-        from fontTools.ttLib.tables import _G_S_U_B_
-        font['GSUB'] = _G_S_U_B_.table_G_S_U_B_()
+        from fontTools.ttLib.tables import G_S_U_B_
+        font['GSUB'] = G_S_U_B_.table_G_S_U_B_()
 
     # Create feature file content
     feature_content = """languagesystem DFLT dflt;
@@ -332,7 +376,57 @@ feature liga {
     finally:
         os.unlink(feature_file)
 
+def add_ligature_substitutions(font, ligature_rules):
+    """
+    Add OpenType ligature substitutions to GSUB table - CORRECTED VERSION
+    """
+    # Ensure GSUB table exists - this creates a proper table_G_S_U_B_ instance
+    if 'GSUB' not in font:
+        from fontTools.ttLib.tables import G_S_U_B_
+        font['GSUB'] = G_S_U_B_.table_G_S_U_B_()
 
+    # Get the GSUB table
+    gsub = font['GSUB']
+    if 'GSUB' in font:
+        print(dir(font['GSUB']))  # Shows available methods/attributes
+    # print(dir(gsub))  # Shows available methods/attributes
+    # IMPORTANT: The table_G_S_U_B_ object itself is the table
+    # You don't access a .table attribute - the object IS the table
+
+    # The correct way to add features is using feaLib.builder
+    # Don't try to manually manipulate GSUB tables
+
+    # Create feature file content
+    feature_content = """languagesystem DFLT dflt;
+languagesystem latn dflt;
+
+feature liga {
+"""
+
+    for components, ligature_name in ligature_rules:
+        comp_str = ' '.join(components)
+        feature_content += f"    sub {comp_str} by {ligature_name};\n"
+
+    feature_content += "} liga;\n"
+
+    # Write temporary feature file
+    import tempfile
+    import os
+    with tempfile.NamedTemporaryFile(mode='w', suffix='.fea', delete=False) as f:
+        f.write(feature_content)
+        feature_file = f.name
+
+    # Use addOpenTypeFeatures to properly build the GSUB table
+    from fontTools.feaLib.builder import addOpenTypeFeatures
+    try:
+        addOpenTypeFeatures(font, feature_file)
+        print("Ligature features added successfully")
+    except Exception as e:
+        print(f"Error adding features: {e}")
+        print("Feature content:")
+        print(feature_content)
+    finally:
+        os.unlink(feature_file)
 
 def get_ligatures_map():
     rootdir = get_project_dir()
