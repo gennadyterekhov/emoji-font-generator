@@ -18,6 +18,10 @@ def sheet_to_dictionary(sheet: list[list]) -> list[dict]:
         russian = row[1]
         pos = row[2]
         spheres = row[3]
+        if spheres:
+            spheres = spheres.split(', ')
+        else:
+            spheres = []
         etymology = row[4]
         comment = row[5]
         tmp = {
