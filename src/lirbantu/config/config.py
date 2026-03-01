@@ -2,7 +2,6 @@ from typing import Any
 
 from lirbantu.project import get_project_dir, read_json_file
 
-
 def get_config():
     root = get_project_dir()
     path = f'{root}/config/config.json'
@@ -27,6 +26,8 @@ def get_usable_emojis() -> list:
 def get_ai_dictionary() -> list:
     root = get_project_dir()
     path = f'{root}/config/ai_output.json'
+    # next version with translations, but with fewer words (for now)
+    path = f'{root}/config/ai_output_w_lirbantu.json'
     return read_json_file(path)
 
 
@@ -45,4 +46,13 @@ def get_wordform_from_ai_dictionary(wordform: str) -> dict | None:
     for w in words:
         if w['wordform'] == wordform:
             return w
+    return None
+
+
+def get_wordform_index_from_ai_dictionary(wordform: str) -> int | None:
+    words = get_ai_dictionary()
+
+    for i, w in enumerate(words):
+        if w['wordform'] == wordform:
+            return i
     return None
