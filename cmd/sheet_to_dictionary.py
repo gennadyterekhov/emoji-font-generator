@@ -12,6 +12,8 @@ def sheet_to_dictionary(sheet: list[list]) -> list[dict]:
     ]
     dictionary = []
     for row in sheet:
+        if not row[0]:
+            continue
         if row[1] == 'translations':
             continue
         lirbantu = row[0]
