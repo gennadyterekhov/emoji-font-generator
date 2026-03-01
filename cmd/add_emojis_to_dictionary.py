@@ -37,7 +37,15 @@ def add_emojis_to_one_word(api_key: str, model_name: str, base_url: str, word: d
     prompt = get_prompt_for_one_word(data_for_prompt)
     try:
         ai_response = ask_ai(api_key, model_name, base_url, prompt)
-        structured_response = json.loads(ai_response)
+        if 'content' in ai_response:
+            md_json = ai_response['content']
+            structured_response = md_json.replace('```json', '')
+            structured_response = structured_response.replace('```', '')
+            structured_response = json.loads(structured_response)
+        else:
+            print('unexpected response', ai_response)
+            return None
+
         if 'error' in structured_response:
             print(f'error classifying word {word['lirbantu']}={word['russian']}, error: {structured_response["error"]}')
             return None
@@ -67,7 +75,7 @@ def add_emojis_to_dictionary(api_key: str, model_name: str, base_url: str) -> No
         if word['lirbantu'] in used_words:
             continue
 
-        print(f'processing word {word('lirbantu')} {i}/{len(dct)}')
+        print(f'processing word {word['lirbantu']} {i}/{len(dct)}')
 
         # let the llm rest a little
         time.sleep(1)

@@ -6,7 +6,7 @@ from emoji_font_generator.input.io import read_md_file
 from emoji_font_generator.project import get_project_dir
 
 
-def ask_ai(api_key: str, model_name: str, base_url: str, prompt: str) -> str:
+def ask_ai(api_key: str, model_name: str, base_url: str, prompt: str) -> str|dict:
     response = requests.post(
         url=base_url,
         headers={
