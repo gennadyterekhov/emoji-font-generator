@@ -9,7 +9,7 @@ from fontTools.pens.ttGlyphPen import TTGlyphPen
 from fontTools.svgLib import SVGPath
 from fontTools.ttLib import TTFont
 
-from emoji_font_generator.config.config import get_ai_dictionary, get_lirbantu_font_filename
+from emoji_font_generator.config.config import get_dictionary, get_lirbantu_font_filename
 from emoji_font_generator.project import get_project_dir
 
 
@@ -430,7 +430,7 @@ feature liga {
 
 def get_ligatures_map():
     rootdir = get_project_dir()
-    dct = get_ai_dictionary()
+    dct = get_dictionary()
     liga = {}
     for wf_info in dct:
         liga[wf_info["lirbantu"]] = f'{rootdir}/emojis/combined/{wf_info["wordform"]}.svg'

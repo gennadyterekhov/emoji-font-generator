@@ -1,7 +1,7 @@
 """
 this is a temporary script to add lirbantu words to ai_output.json so that we can use translated words for the font ligatures
 """
-from emoji_font_generator.config.config import get_ai_dictionary, get_wordform_index_from_ai_dictionary
+from emoji_font_generator.config.config import get_dictionary, get_wordform_index_from_ai_dictionary
 from emoji_font_generator.project import read_json_file, get_project_dir, write_json_file
 
 
@@ -14,7 +14,7 @@ def main():
     rootdir = get_project_dir()
     pth = f'{rootdir}/config/ai_output.json'
     raw_dict = read_json_file(f'{rootdir}/config/dict.json')
-    before = get_ai_dictionary()
+    before = get_dictionary()
     after = []
     for pair in raw_dict:
         lirbantu = pair[0].replace('\n', ',')
