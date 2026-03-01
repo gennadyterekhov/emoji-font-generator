@@ -1,6 +1,6 @@
 from typing import Any
 
-from lirbantu.project import get_project_dir, read_json_file
+from emoji_font_generator.project import get_project_dir, read_json_file
 
 
 def get_lirbantu_font_filename():

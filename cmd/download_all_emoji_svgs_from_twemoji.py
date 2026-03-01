@@ -1,5 +1,5 @@
-from lirbantu.config.config import get_usable_emojis, get_emojis_used_by_ai
-from lirbantu.emoji_to_svg import emoji_to_svg
+from emoji_font_generator.config.config import get_usable_emojis, get_emojis_used_by_ai
+from emoji_font_generator.emoji_to_svg import emoji_to_svg
 
 
 def download_list(emojis):

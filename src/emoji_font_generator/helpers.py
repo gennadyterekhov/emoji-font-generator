@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from lirbantu.project import get_project_dir
+from emoji_font_generator.project import get_project_dir
 
 
 def get_emoji_svg_path(emoji_char: str) -> str:

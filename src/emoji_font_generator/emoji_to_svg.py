@@ -4,8 +4,8 @@ import time
 import requests
 from pathlib import Path
 
-from lirbantu.helpers import get_twemoji_codepoint
-from lirbantu.project import get_project_dir
+from emoji_font_generator.helpers import get_twemoji_codepoint
+from emoji_font_generator.project import get_project_dir
 
 
 def emoji_to_svg(emoji_char, output_path=None):

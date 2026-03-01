@@ -3,10 +3,14 @@
 examples use lirbantu (conlang)
 
 # idea
+the base idea is to encode every word using 1-4 parts
 
+- character 1 (any svg)
+- character 2 (any svg) (optional)
+- logical properties. how the characters relate to each other (any svg) (optional)
+- grammar. what grammatical properties does this word have. singluar/plural, declension, conjugation etc. (any svg) (optional)
 
-# emojis for roots are generated with an LLM manually (in browser)
-prompt is in config/prompt.md
+we can then combine svgs into a single composite character.
 
 # usage
 

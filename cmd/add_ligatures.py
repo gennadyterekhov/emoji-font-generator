@@ -9,8 +9,8 @@ from fontTools.pens.ttGlyphPen import TTGlyphPen
 from fontTools.svgLib import SVGPath
 from fontTools.ttLib import TTFont
 
-from lirbantu.config.config import get_ai_dictionary, get_lirbantu_font_filename
-from lirbantu.project import get_project_dir
+from emoji_font_generator.config.config import get_ai_dictionary, get_lirbantu_font_filename
+from emoji_font_generator.project import get_project_dir
 
 
 def replace_ligature(ligature):

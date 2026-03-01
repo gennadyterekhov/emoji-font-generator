@@ -1,7 +1,7 @@
 import xml.etree.ElementTree as ET
 
-from lirbantu.helpers import get_emoji_svg_path_or_throw, get_logic_svg_path_or_throw, get_grammar_svg_path_or_throw
-from lirbantu.project import get_project_dir
+from emoji_font_generator.helpers import get_emoji_svg_path_or_throw, get_logic_svg_path_or_throw, get_grammar_svg_path_or_throw
+from emoji_font_generator.project import get_project_dir
 import os
 
 

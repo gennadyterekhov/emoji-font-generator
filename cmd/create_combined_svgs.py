@@ -3,8 +3,8 @@ create an SVG file for every word in ai_output.json
 """
 from pathlib import Path
 
-from lirbantu.combine import  combine_wordform
-from lirbantu.project import read_json_file, get_project_dir
+from emoji_font_generator.combine import  combine_wordform
+from emoji_font_generator.project import read_json_file, get_project_dir
 
 
 def main():

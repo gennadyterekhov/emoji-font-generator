@@ -1,4 +1,4 @@
-from lirbantu.helpers import get_twemoji_codepoint
+from emoji_font_generator.helpers import get_twemoji_codepoint
 
 
 def test_codepoint():
