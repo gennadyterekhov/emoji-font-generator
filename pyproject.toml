@@ -1,7 +1,7 @@
 [project]
-name = "lirbantu"
+name = "emoji-font-generator"
 version = "0.1.0"
-description = "Add your description here"
+description = "automated creation of hieroglyphic script using emojis or custom svgs"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
