@@ -46,7 +46,34 @@
         "description": "те, кто были до родителей"
 }
 ```
+### дождь
 
+```json
+{
+        "russian": "дождь",
+        "root1": "облако",
+        "root2": "вода",
+        "logic": "genitive",
+        "grammar": "n",
+        "root1_emoji": "☁️",
+        "root2_emoji": "💧",
+        "description": "cloud water, water of the cloud, water from the cloud"
+}
+```
+### дождевой
+
+```json
+{
+        "russian": "дождевой",
+        "root1": "облако",
+        "root2": "вода",
+        "logic": "genitive",
+        "grammar": "adj",
+        "root1_emoji": "☁️",
+        "root2_emoji": "💧",
+        "description": "cloud water, water of the cloud, water from the cloud"
+}
+```
 # Описание входных данных
 
 во входных данных - json с 3 ключами.
