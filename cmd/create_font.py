@@ -1,6 +1,12 @@
+import sys
+
 from fontTools.ttLib import TTFont, newTable
 from fontTools.pens.ttGlyphPen import TTGlyphPen
 from fontTools.misc.transform import Transform
+
+from lirbantu.config.config import get_ai_dictionary
+
+
 # import svg2ttf  # сторонняя библиотека для конвертации SVG в TTF
 
 def create_ttf_from_svg(svg_map, output_path='output.ttf'):
@@ -57,3 +63,17 @@ def create_ttf_from_svg(svg_map, output_path='output.ttf'):
     font['cmap'] = cmap_table
 
     font.save(output_path)
+
+
+def get_svg_map():
+    words=get_ai_dictionary()
+    return {}
+
+
+def main():
+    svg_map = get_svg_map()
+    create_ttf_from_svg(svg_map)
+
+
+if __name__ == '__main__':
+    main()

@@ -1,3 +1,4 @@
+// this solution doesn't support svg's `defs` . so it won't work
 import ifont from 'ifont';
 import fs from 'node:fs';
 import path from 'path';
