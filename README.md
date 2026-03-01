@@ -34,6 +34,10 @@ we can then combine svgs into a single composite character.
 - use https://onlinetsvtools.com/convert-tsv-to-json to convert your dictionary sheet to json. put it it `input/raw/sheet.json`
 - use `cmd/sheet_to_dictionary.py` (or write your own converter) to convert your raw sheet to a dictionary.json-compatible format.
 - create emoji correspondence for your roots. You can use an LLM manually in browser (free), or use a token with `cmd/add_emojis_to_dictionary.py`
+  - set llm vars in .env `LLM_API_KEY=<token>`
+    - LLM_URL (completions api)
+    - LLM_API_KEY
+    - LLM_MODEL_NAME
   - example prompt is in `input/llm/prompt_example.md`
 - download emoji svgs (`cmd/download_all_emoji_svgs_from_twemoji.py`)
 - if needed, create custom svgs if emojis are not enough. this site is handy https://text-to-svg.com/

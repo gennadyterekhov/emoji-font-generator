@@ -8,6 +8,7 @@ dependencies = [
     "brotli>=1.2.0",
     "fonttools>=4.61.1",
     "picosvg>=0.22.3",
+    "python-dotenv>=1.2.2",
     "requests>=2.32.5",
 ]
 
