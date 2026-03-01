@@ -69,22 +69,29 @@ def add_emojis_to_dictionary(api_key: str, model_name: str, base_url: str) -> No
     updated = []
     # words are not unique (can have several orthographic variants or meaning), we must control uniqueness at app level
     used_words = set()
+    pos_whitelist = ['num', 'prep', 'interj', 'pron', 'conj']
     for i, word in enumerate(dct):
         if word['russian'] in used_words:
             continue
         if word['lirbantu'] in used_words:
             continue
-
+        if word['pos'] in pos_whitelist:
+            continue
+        if word['root1']:
+            continue
         print(f'processing word {word['lirbantu']} {i}/{len(dct)}')
 
         # let the llm rest a little
         time.sleep(1)
         tmp = add_emojis_to_one_word(api_key, model_name, base_url, word)
         if tmp:
-            updated.append(tmp)
+            # updated.append(tmp)
+            dct[i] = tmp
+            # we save on every iteration so that we can abort the long-running process and then continue from where we left
+            save_new_dictionary(dct)
         used_words.add(word['russian'])
         used_words.add(word['lirbantu'])
-    save_new_dictionary(updated)
+    save_new_dictionary(dct)
 
 
 def main():
