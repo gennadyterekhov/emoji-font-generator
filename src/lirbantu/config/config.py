@@ -29,7 +29,7 @@ def get_usable_emojis() -> list:
     return dct
 
 
-def get_ai_dictionary() -> list:
+def get_ai_dictionary() -> list[dict]:
     root = get_project_dir()
     path = f'{root}/config/ai_output.json'
     # next version with translations, but with fewer words (for now)
