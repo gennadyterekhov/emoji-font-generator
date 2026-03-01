@@ -16,9 +16,13 @@ from fontTools.ttLib.tables._n_a_m_e import table__n_a_m_e
 # from fontTools.ttLib.tables._o_s_2f_2 import table__O_S_2f_2
 from fontTools.ttLib.tables.O_S_2f_2 import table_O_S_2f_2
 from fontTools.ttLib.tables._p_o_s_t import table__p_o_s_t
+from fontTools.ttLib.tables._g_l_y_f import table__g_l_y_f
 from fontTools.pens.ttGlyphPen import TTGlyphPen
 from fontTools.svgLib import SVGPath
 import xml.etree.ElementTree as ET
+from fontTools.fontBuilder import FontBuilder
+from lirbantu.project import get_project_dir
+
 
 class SVGToTTF:
     def __init__(self, font_name="CustomFont", svg_dir="./svgs"):
@@ -184,6 +188,7 @@ class SVGToTTF:
         # self.font['OS/2'] = table__O_S_2f_2()
         self.font['OS/2'] = table_O_S_2f_2()
         self.font['post'] = table__p_o_s_t()
+        self.font['glyf'] = table__g_l_y_f()
 
         # Initialize tables
         self.font['head'].version = 1.0
@@ -293,12 +298,17 @@ class SVGToTTF:
         self.font['post'].minMemType1 = 0
         self.font['post'].maxMemType1 = 0
 
+        # self.font['glyf']={}
+
         # Add glyphs to font
         glyph_order = ['.notdef'] + [name for name in self.glyphs.keys() if name != '.notdef']
         self.font.setGlyphOrder(glyph_order)
 
         # Set glyph metrics
         for glyph_name, glyph in self.glyphs.items():
+            # self.font['glyf'].
+            print('glyph_name', glyph_name)
+            print('glyph', glyph)
             self.font['glyf'][glyph_name] = glyph
 
             # Set horizontal metrics
@@ -349,16 +359,10 @@ class SVGToTTF:
 def main():
     """Main function"""
     # Parse command line arguments
-    svg_dir = "./svgs"
+    projdir=get_project_dir()
+    svg_dir = f'{projdir}/emojis/combined'
     output_file = "custom_font.ttf"
     font_name = "CustomFont"
-
-    if len(sys.argv) > 1:
-        svg_dir = sys.argv[1]
-    if len(sys.argv) > 2:
-        output_file = sys.argv[2]
-    if len(sys.argv) > 3:
-        font_name = sys.argv[3]
 
     print(f"SVG to TTF Converter using fontTools")
     print(f"SVG directory: {svg_dir}")
