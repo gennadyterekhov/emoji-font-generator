@@ -11,3 +11,9 @@ def read_json_file(path: Path | str):
     with open(path) as json_file:
         data = json.load(json_file)
     return data
+
+
+def read_md_file(path: Path | str):
+    with open(path) as md_file:
+        data = md_file.read()
+    return data

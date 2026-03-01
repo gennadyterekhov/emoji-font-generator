@@ -1,94 +1,37 @@
+import json
+import os
+from typing import Optional
+
 from dotenv import load_dotenv
 
-import os
-import requests
-import json
-
 from emoji_font_generator.input.config import get_dictionary, save_new_dictionary
+from emoji_font_generator.llm.llm import ask_ai, get_prompt_for_one_word
 
 
-def ask_ai(api_key: str, model_name: str, base_url: str, prompt:str) -> str:
-    # First API call with reasoning
-    response = requests.post(
-        url=base_url,
-        headers={
-            "Authorization": f"Bearer {api_key}",
-            "Content-Type": "application/json",
-        },
-        data=json.dumps({
-            "model": model_name,
-            "messages": [
-                {
-                    "role": "user",
-                    "content": prompt,#"How many r's are in the word 'strawberry'?"
-                }
-            ],
-            "reasoning": {"enabled": True}
-        })
-    )
-
-    # Extract the assistant message with reasoning_details
-    response = response.json()
-    response = response['choices'][0]['message']
-    return response
-
-
-def add_emojis_to_one_word(api_key: str, model_name: str, base_url: str, word: dict) -> dict:
-    prompt='''
-# задача
-Я делаю искусственный язык (конланг). Основной словарь для него сделан на русском.
-Поэтому теперь нужно классифицировать значения русских слов по определенным принципам.
-Суть в том, чтобы каждое слово разделить на 4 компонента.
-- Корень 1 (определитель)
-- Корень 2 (определяемое, главное слово)
-- Логика связи между корнями
-- Грамматические особенности (соответствуют грамматике конланга, а не русского)
-
-Тебе нужно классифицировать одно слово, пропуская неизвестные или сложные случаи.
-Бонусные очки, если корни можно выразить с помощью эмодзи.
-
-# описание входных данных
-во входных данных - json с 3 ключами.
-
-russian это "грязный" список слов для классификации.
-там будут непонятные и лишние слова, например цифры, предлоги, частицы, местоимения итд.
-Когда встретишь что-то непонятное, игнорируй и двигайся дальше.
-Корнями в свою очередь могут быть любые русские или английские слова.
-
-logic это список логических "операций", которые ты можешь производить над корнями.
-Воспринимай их в наиболее широком смысле, при необходимости притягивая за уши.
-Обрати внимание, genitive,  accusative и instrumental это не падежи в буквальном смысле, а именно логика связи двух корней.
-Смотри только на поле "name", остальные игнорируй
-
-grammar это грамматическая форма итогового слова, то есть слова "дело" и "делать" должны различаться только этим одним компонентом.
-Смотри только на поле "meaning", остальные игнорируй
-## пример входных данных
-# описание выходных данных
-выходные данные это json-массив классифицированных слов
-
-пример выходных данных (поля "root1_emoji", "root2_emoji", "description" необязательные)
-```json
-
-[
-        {
-                "wordform":"дождь",
-                "root1": "облако",
-                "root2": "вода",
-                "logic": "genitive",
-                "grammar": "noun",
-                "root1_emoji": "☁️",
-                "root2_emoji": "💧",
-                "description": "облачная вода неба, cloud water"
-        }
-]
-```
-    '''
+def add_emojis_to_one_word(api_key: str, model_name: str, base_url: str, word: dict) -> Optional[dict]:
+    prompt = get_prompt_for_one_word(word)
     ai_response = ask_ai(api_key, model_name, base_url, prompt)
-    word['']=''
+    try:
+        structured_response = json.loads(ai_response)
+        if 'error' in structured_response:
+            print(f'could classify word {word}, error: {structured_response["error"]}')
+            return None
+        word['root1'] = structured_response.get('root1', '')
+        word['root2'] = structured_response.get('root2', '')
+        word['logic'] = structured_response.get('logic', '')
+        word['grammar'] = structured_response.get('grammar', '')
+        word['root1_emoji'] = structured_response.get('root1_emoji', '')
+        word['root2_emoji'] = structured_response.get('root2_emoji', '')
+        word['description'] = structured_response.get('description', '')
+
+    except json.decoder.JSONDecodeError as e:
+        print(f'could not decode ai response for word {word}, error: {e}')
+        return None
+
     return word
 
 
-def add_emojis_to_dictionary(api_key: str, model_name: str, base_url: str) -> str:
+def add_emojis_to_dictionary(api_key: str, model_name: str, base_url: str) -> None:
     dct = get_dictionary()
     updated = []
     # words are not unique (can have several orthographic variants or meaning), we must control uniqueness at app level
@@ -99,7 +42,8 @@ def add_emojis_to_dictionary(api_key: str, model_name: str, base_url: str) -> st
         if word['lirbantu'] in used_words:
             continue
         tmp = add_emojis_to_one_word(api_key, model_name, base_url, word)
-        updated.append(tmp)
+        if tmp:
+            updated.append(tmp)
         used_words.add(word['russian'])
         used_words.add(word['lirbantu'])
     save_new_dictionary(updated)
@@ -110,7 +54,6 @@ def main():
     api_key = os.getenv('LLM_API_KEY')
     model_name = os.getenv('LLM_MODEL_NAME')
     base_url = os.getenv('LLM_URL')
-    ask_ai(api_key, model_name, base_url)
     add_emojis_to_dictionary(api_key, model_name, base_url)
 
 
