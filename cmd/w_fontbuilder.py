@@ -4,26 +4,16 @@ SVG to TTF Font Converter using fontTools
 Converts SVG files in a directory to a valid TTF font file.
 """
 
-import os
-import sys
-from fontTools.ttLib import TTFont, newTable
-from fontTools.ttLib.tables._c_m_a_p import cmap_format_4
-from fontTools.ttLib.tables._g_l_y_f import Glyph
-from fontTools.ttLib.tables._h_e_a_d import table__h_e_a_d
-from fontTools.ttLib.tables._h_h_e_a import table__h_h_e_a
-from fontTools.ttLib.tables._m_a_x_p import table__m_a_x_p
-from fontTools.ttLib.tables._n_a_m_e import table__n_a_m_e
-# from fontTools.ttLib.tables._o_s_2f_2 import table__O_S_2f_2
-from fontTools.ttLib.tables.O_S_2f_2 import table_O_S_2f_2
-from fontTools.ttLib.tables._p_o_s_t import table__p_o_s_t
-from fontTools.ttLib.tables._g_l_y_f import table__g_l_y_f
-from fontTools.pens.ttGlyphPen import TTGlyphPen
-from fontTools.svgLib import SVGPath
-import xml.etree.ElementTree as ET
+
 from fontTools.fontBuilder import FontBuilder
+from fontTools.pens.ttGlyphPen import TTGlyphPen
 from lirbantu.project import get_project_dir
-
-
+def drawTestGlyph(pen):
+    pen.moveTo((100, 100))
+    pen.lineTo((100, 1000))
+    pen.qCurveTo((200, 900), (400, 900), (500, 1000))
+    pen.lineTo((500, 100))
+    pen.closePath()
 
 def main():
     """Main function"""
@@ -39,17 +29,39 @@ def main():
     print(f"Font name: {font_name}")
     print("-" * 50)
 
-    fb = FontBuilder(...)
-    fb.setupGlyphOrder(...)
-    fb.setupCharacterMap(...)
-    fb.setupGlyf(...) #--or-- fb.setupCFF(...)
-    fb.setupHorizontalMetrics(...)
-    fb.setupHorizontalHeader()
-    fb.setupNameTable(...)
-    fb.setupOS2()
-    fb.addOpenTypeFeatures(...)
+    fb = FontBuilder(1024, isTTF=True)
+    fb.setupGlyphOrder([".notdef", ".null", "space", "A", "a"])
+    fb.setupCharacterMap({32: "space", 65: "A", 97: "a"})
+    advanceWidths = {".notdef": 600, "space": 500, "A": 600, "a": 600, ".null": 0}
+
+    familyName = "HelloTestFont"
+    styleName = "TotallyNormal"
+    version = "0.1"
+
+    nameStrings = dict(
+        familyName=dict(en=familyName, nl="HalloTestFont"),
+        styleName=dict(en=styleName, nl="TotaalNormaal"),
+        uniqueFontIdentifier="fontBuilder: " + familyName + "." + styleName,
+        fullName=familyName + "-" + styleName,
+        psName=familyName + "-" + styleName,
+        version="Version " + version,
+    )
+
+    pen = TTGlyphPen(None)
+    drawTestGlyph(pen)
+    glyph = pen.glyph()
+    glyphs = {".notdef": glyph, "space": glyph, "A": glyph, "a": glyph, ".null": glyph}
+    fb.setupGlyf(glyphs)
+    metrics = {}
+    glyphTable = fb.font["glyf"]
+    for gn, advanceWidth in advanceWidths.items():
+        metrics[gn] = (advanceWidth, glyphTable[gn].xMin)
+    fb.setupHorizontalMetrics(metrics)
+    fb.setupHorizontalHeader(ascent=824, descent=-200)
+    fb.setupNameTable(nameStrings)
+    fb.setupOS2(sTypoAscender=824, usWinAscent=824, usWinDescent=200)
     fb.setupPost()
-    fb.save(...)
+    fb.save("test.ttf")
 
 
 if __name__ == "__main__":
