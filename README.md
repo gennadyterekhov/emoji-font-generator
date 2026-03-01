@@ -1,5 +1,10 @@
-# автоматическое создание иероглифической письменности на основе emoji
-для примера языка используется lirbantu
+# automated creation of hieroglyphic script using emojis or custom svgs 
+
+examples use lirbantu (conlang)
+
+
+# emojis for roots are generated with an LLM manually (in browser)
+prompt is in config/prompt.md
 
 # what to do?
 
