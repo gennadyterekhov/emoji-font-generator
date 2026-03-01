@@ -1,8 +1,10 @@
-# automated creation of hieroglyphic script using emojis or custom svgs 
+# emoji-font-generator 
 
-examples use lirbantu (conlang) with a russian dictionary
+This project allows automated creation of hieroglyphic script using emojis or custom svgs.
 
-# idea
+Examples use lirbantu (conlang) with a russian dictionary.
+
+# Idea
 the base idea is to encode every word using one hieroglyph consisting of 1-4 parts
 
 - character 1 (any svg)
@@ -10,7 +12,7 @@ the base idea is to encode every word using one hieroglyph consisting of 1-4 par
 - logical properties. how the characters relate to each other (any svg) (optional)
 - grammar. what grammatical properties does this word have. singluar/plural, declension, conjugation etc. (any svg) (optional)
 
-## examples:  
+## Examples:  
 'eye' -> '👁' (emoji is literal)  
 'rain' ->
 ```json
@@ -26,7 +28,7 @@ the base idea is to encode every word using one hieroglyph consisting of 1-4 par
 
 we can then combine svgs into a single composite character.
 
-# usage
+# Usage
 
 - create a dictionary for your language (list of words to use)
 - create emoji correspondence for your roots. You can use an LLM, example prompt is in `input/llm/prompt_example.md`
