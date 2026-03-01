@@ -106,7 +106,9 @@
         "lirbantu": "acu",
         "russian": "а ",
         "pos": "conj",
-        "spheres": [],
+        "spheres": [
+            "грамматика"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -121,7 +123,9 @@
         "lirbantu": "ahan",
         "russian": "летать",
         "pos": "v",
-        "spheres": [],
+        "spheres": [
+            "природа"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -136,7 +140,9 @@
         "lirbantu": "ahun",
         "russian": "полет",
         "pos": "n",
-        "spheres": [],
+        "spheres": [
+            "природа"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -151,7 +157,9 @@
         "lirbantu": "ak",
         "russian": "в (направление)",
         "pos": "prep",
-        "spheres": [],
+        "spheres": [
+            "грамматика"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -166,7 +174,9 @@
         "lirbantu": "ak",
         "russian": "к ",
         "pos": "prep",
-        "spheres": [],
+        "spheres": [
+            "грамматика"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -211,7 +221,9 @@
         "lirbantu": "am",
         "russian": "да  ",
         "pos": "interj",
-        "spheres": [],
+        "spheres": [
+            "язык"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -434,7 +446,9 @@
         "lirbantu": "ant",
         "russian": "бывший",
         "pos": "past part",
-        "spheres": [],
+        "spheres": [
+            "простые действия"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -449,7 +463,9 @@
         "lirbantu": "anu ",
         "russian": "существующий",
         "pos": "pr part",
-        "spheres": [],
+        "spheres": [
+            "простые действия"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -651,9 +667,11 @@
     },
     {
         "lirbantu": "awa",
-        "russian": "но",
+        "russian": "но ",
         "pos": "conj",
-        "spheres": [],
+        "spheres": [
+            "грамматика"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -700,8 +718,8 @@
     },
     {
         "lirbantu": "awsarant",
-        "russian": "царь",
-        "pos": "n",
+        "russian": "коронованный",
+        "pos": "past part",
         "spheres": [
             "политика"
         ],
@@ -717,8 +735,8 @@
     },
     {
         "lirbantu": "awsarant",
-        "russian": "коронованный",
-        "pos": "past part",
+        "russian": "царь",
+        "pos": "n",
         "spheres": [
             "политика"
         ],
@@ -875,7 +893,27 @@
         "lirbantu": "az",
         "russian": "из ",
         "pos": "prep",
-        "spheres": [],
+        "spheres": [
+            "грамматика"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "Azahar",
+        "russian": "Земля как планета",
+        "pos": "n",
+        "spheres": [
+            "природа",
+            "астрономия"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -905,12 +943,11 @@
         "description": ""
     },
     {
-        "lirbantu": "Azahar",
-        "russian": "Земля как планета",
-        "pos": "n",
+        "lirbantu": "azan",
+        "russian": "выходить",
+        "pos": "v",
         "spheres": [
-            "природа",
-            "астрономия"
+            "простые действия"
         ],
         "etymology": "",
         "comment": "",
@@ -940,12 +977,29 @@
         "description": ""
     },
     {
-        "lirbantu": "Banti",
-        "russian": "форт\nгород",
+        "lirbantu": "banti",
+        "russian": "город",
         "pos": "n",
         "spheres": [
             "общество",
             "политика"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "banti",
+        "russian": "форт",
+        "pos": "n",
+        "spheres": [
+            "военное"
         ],
         "etymology": "",
         "comment": "",
@@ -979,7 +1033,9 @@
         "lirbantu": "bemor",
         "russian": "болезнь",
         "pos": "n",
-        "spheres": [],
+        "spheres": [
+            "природа"
+        ],
         "etymology": "persian",
         "comment": "",
         "root1": "",
@@ -1026,11 +1082,10 @@
     },
     {
         "lirbantu": "bundi",
-        "russian": "сова",
+        "russian": "плохое предзнаменование",
         "pos": "n",
         "spheres": [
-            "природа",
-            "птица"
+            "религия"
         ],
         "etymology": "swahili",
         "comment": "",
@@ -1044,10 +1099,11 @@
     },
     {
         "lirbantu": "bundi",
-        "russian": "плохое предзнаменование",
+        "russian": "сова",
         "pos": "n",
         "spheres": [
-            "религия"
+            "природа",
+            "птица"
         ],
         "etymology": "swahili",
         "comment": "",
@@ -1504,7 +1560,7 @@
     },
     {
         "lirbantu": "caranuu",
-        "russian": "ученый",
+        "russian": "знаток",
         "pos": "n",
         "spheres": [
             "наука"
@@ -1521,7 +1577,7 @@
     },
     {
         "lirbantu": "caranuu",
-        "russian": "знаток",
+        "russian": "ученый",
         "pos": "n",
         "spheres": [
             "наука"
@@ -1588,8 +1644,25 @@
         "description": ""
     },
     {
+        "lirbantu": "caro",
+        "russian": "коротко",
+        "pos": "adv",
+        "spheres": [
+            "абстракт"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
         "lirbantu": "carsa",
-        "russian": "слава",
+        "russian": "известность",
         "pos": "n",
         "spheres": [
             "общество"
@@ -1623,7 +1696,7 @@
     },
     {
         "lirbantu": "carsa",
-        "russian": "известность",
+        "russian": "слава",
         "pos": "n",
         "spheres": [
             "общество"
@@ -1674,11 +1747,46 @@
         "description": ""
     },
     {
+        "lirbantu": "caru",
+        "russian": "короткий",
+        "pos": "adj",
+        "spheres": [
+            "абстракт"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
         "lirbantu": "carú",
         "russian": "теплый",
         "pos": "adj",
         "spheres": [
             "природа"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "carun",
+        "russian": "исследование",
+        "pos": "n",
+        "spheres": [
+            "наука",
+            "технологии/работа"
         ],
         "etymology": "",
         "comment": "",
@@ -1777,27 +1885,12 @@
         "description": ""
     },
     {
-        "lirbantu": "charo",
-        "russian": "коротко",
-        "pos": "adv",
-        "spheres": [
-            "абстракт"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
         "lirbantu": "charu",
         "russian": "быстрый",
         "pos": "",
-        "spheres": [],
+        "spheres": [
+            "природа"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -1931,7 +2024,9 @@
         "lirbantu": "chomna",
         "russian": "помощь",
         "pos": "n",
-        "spheres": [],
+        "spheres": [
+            "общество"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -1946,7 +2041,9 @@
         "lirbantu": "chomnan",
         "russian": "помощник",
         "pos": "n",
-        "spheres": [],
+        "spheres": [
+            "общество"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -1961,7 +2058,9 @@
         "lirbantu": "chomnuu",
         "russian": "помогать",
         "pos": "v",
-        "spheres": [],
+        "spheres": [
+            "общество"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -2279,7 +2378,9 @@
         "lirbantu": "cu",
         "russian": "но ",
         "pos": "conj",
-        "spheres": [],
+        "spheres": [
+            "грамматика"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -2294,7 +2395,9 @@
         "lirbantu": "dahman",
         "russian": "лечить",
         "pos": "v",
-        "spheres": [],
+        "spheres": [
+            "общество"
+        ],
         "etymology": "persian",
         "comment": "",
         "root1": "",
@@ -2324,7 +2427,7 @@
     },
     {
         "lirbantu": "Demara",
-        "russian": "пиво-инженер",
+        "russian": "Дэмара, пиво-инженер",
         "pos": "pron",
         "spheres": [
             "имя"
@@ -2392,10 +2495,11 @@
     },
     {
         "lirbantu": "din",
-        "russian": "суждение",
+        "russian": "суд",
         "pos": "n",
         "spheres": [
-            "абстракт"
+            "общество",
+            "политика"
         ],
         "etymology": "",
         "comment": "",
@@ -2409,11 +2513,10 @@
     },
     {
         "lirbantu": "din",
-        "russian": "суд",
+        "russian": "суждение",
         "pos": "n",
         "spheres": [
-            "общество",
-            "политика"
+            "абстракт"
         ],
         "etymology": "",
         "comment": "",
@@ -2603,7 +2706,7 @@
     },
     {
         "lirbantu": "du",
-        "russian": "все ",
+        "russian": "всё",
         "pos": "pron",
         "spheres": [
             "абстракт"
@@ -2620,7 +2723,7 @@
     },
     {
         "lirbantu": "du",
-        "russian": "всё",
+        "russian": "все ",
         "pos": "pron",
         "spheres": [
             "абстракт"
@@ -2891,10 +2994,10 @@
     },
     {
         "lirbantu": "duxanu",
-        "russian": "шагающий",
+        "russian": "марширующий",
         "pos": "pr part",
         "spheres": [
-            "спорт"
+            "военное"
         ],
         "etymology": "",
         "comment": "",
@@ -2908,10 +3011,10 @@
     },
     {
         "lirbantu": "duxanu",
-        "russian": "марширующий",
+        "russian": "шагающий",
         "pos": "pr part",
         "spheres": [
-            "военное"
+            "спорт"
         ],
         "etymology": "",
         "comment": "",
@@ -2958,6 +3061,23 @@
         "description": ""
     },
     {
+        "lirbantu": "Dwentu",
+        "russian": "Двенту, аспект хаоса",
+        "pos": "pron",
+        "spheres": [
+            "имя"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
         "lirbantu": "dwentu",
         "russian": "тёмный",
         "pos": "adj",
@@ -2975,27 +3095,12 @@
         "description": ""
     },
     {
-        "lirbantu": "Dwentu",
-        "russian": "тамту бывш",
-        "pos": "pron",
-        "spheres": [
-            "имя"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
         "lirbantu": "e",
         "russian": "родительный падеж / of / de",
         "pos": "prep",
-        "spheres": [],
+        "spheres": [
+            "грамматика"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -3010,7 +3115,9 @@
         "lirbantu": "e ",
         "russian": "от ",
         "pos": "prep",
-        "spheres": [],
+        "spheres": [
+            "грамматика"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -3045,6 +3152,21 @@
         "spheres": [
             "искусство"
         ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "ekan",
+        "russian": "увеличивать",
+        "pos": "v",
+        "spheres": [],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -3111,10 +3233,44 @@
     },
     {
         "lirbantu": "ekú",
-        "russian": "большой\nувеличенный",
+        "russian": "большой",
         "pos": "adj",
         "spheres": [
             "абстракт"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "ekú",
+        "russian": "увеличенный",
+        "pos": "adj",
+        "spheres": [
+            "абстракт"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "ekun",
+        "russian": "увеличение",
+        "pos": "n",
+        "spheres": [
+            "наука"
         ],
         "etymology": "",
         "comment": "",
@@ -3164,7 +3320,9 @@
         "lirbantu": "el",
         "russian": "родительный падеж / of / de",
         "pos": "prep",
-        "spheres": [],
+        "spheres": [
+            "грамматика"
+        ],
         "etymology": "",
         "comment": "перед гласной",
         "root1": "",
@@ -3195,7 +3353,7 @@
     },
     {
         "lirbantu": "emil",
-        "russian": "маленькость\nмера",
+        "russian": "мера",
         "pos": "n",
         "spheres": [
             "абстракт"
@@ -3316,7 +3474,9 @@
         "lirbantu": "epe",
         "russian": "для ",
         "pos": "prep",
-        "spheres": [],
+        "spheres": [
+            "грамматика"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -3331,7 +3491,9 @@
         "lirbantu": "epe",
         "russian": "потому что",
         "pos": "pron",
-        "spheres": [],
+        "spheres": [
+            "грамматика"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -3378,12 +3540,12 @@
     },
     {
         "lirbantu": "Érkir",
-        "russian": "почва",
+        "russian": "земля в значении пол",
         "pos": "n",
         "spheres": [
             "природа"
         ],
-        "etymology": "armenian",
+        "etymology": "",
         "comment": "",
         "root1": "",
         "root2": "",
@@ -3395,12 +3557,12 @@
     },
     {
         "lirbantu": "Érkir",
-        "russian": "земля в значении пол",
+        "russian": "почва",
         "pos": "n",
         "spheres": [
             "природа"
         ],
-        "etymology": "",
+        "etymology": "armenian",
         "comment": "",
         "root1": "",
         "root2": "",
@@ -3448,7 +3610,9 @@
         "lirbantu": "ertepo",
         "russian": "высоко",
         "pos": "adv",
-        "spheres": [],
+        "spheres": [
+            "абстракт"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -3493,12 +3657,12 @@
     },
     {
         "lirbantu": "eshant",
-        "russian": "полный",
-        "pos": "adj",
+        "russian": "наполненный",
+        "pos": "past part",
         "spheres": [
             "абстракт"
         ],
-        "etymology": "sumerian",
+        "etymology": "",
         "comment": "",
         "root1": "",
         "root2": "",
@@ -3510,12 +3674,12 @@
     },
     {
         "lirbantu": "eshant",
-        "russian": "наполненный",
-        "pos": "past part",
+        "russian": "полный",
+        "pos": "adj",
         "spheres": [
             "абстракт"
         ],
-        "etymology": "",
+        "etymology": "sumerian",
         "comment": "",
         "root1": "",
         "root2": "",
@@ -3576,7 +3740,9 @@
         "lirbantu": "ethan",
         "russian": "класть",
         "pos": "v",
-        "spheres": [],
+        "spheres": [
+            "простые действия"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -3591,7 +3757,9 @@
         "lirbantu": "ethan",
         "russian": "ложить",
         "pos": "v",
-        "spheres": [],
+        "spheres": [
+            "простые действия"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -3638,7 +3806,9 @@
         "lirbantu": "ethanu",
         "russian": "кладущий",
         "pos": "pr part",
-        "spheres": [],
+        "spheres": [
+            "простые действия"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -3653,7 +3823,9 @@
         "lirbantu": "ethanu",
         "russian": "располагающий",
         "pos": "",
-        "spheres": [],
+        "spheres": [
+            "простые действия"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -3719,7 +3891,9 @@
         "lirbantu": "ezbo",
         "russian": "сильно",
         "pos": "adv",
-        "spheres": [],
+        "spheres": [
+            "абстракт"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -3766,9 +3940,11 @@
     },
     {
         "lirbantu": "ezubewu",
-        "russian": "тяжелый",
-        "pos": "adj",
-        "spheres": [],
+        "russian": "сложный",
+        "pos": "",
+        "spheres": [
+            "абстракт"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -3781,9 +3957,11 @@
     },
     {
         "lirbantu": "ezubewu",
-        "russian": "сложный",
-        "pos": "",
-        "spheres": [],
+        "russian": "тяжелый",
+        "pos": "adj",
+        "spheres": [
+            "абстракт"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -3926,7 +4104,7 @@
     },
     {
         "lirbantu": "geré",
-        "russian": "спокойствие",
+        "russian": "покой",
         "pos": "n",
         "spheres": [
             "эмоции"
@@ -3943,7 +4121,7 @@
     },
     {
         "lirbantu": "geré",
-        "russian": "покой",
+        "russian": "спокойствие",
         "pos": "n",
         "spheres": [
             "эмоции"
@@ -3992,7 +4170,22 @@
     },
     {
         "lirbantu": "geregu",
-        "russian": "неверный",
+        "russian": "косой",
+        "pos": "adj",
+        "spheres": [],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "geregu",
+        "russian": "кривой",
         "pos": "adj",
         "spheres": [],
         "etymology": "",
@@ -4024,39 +4217,26 @@
     },
     {
         "lirbantu": "geregu",
+        "russian": "неверный",
+        "pos": "adj",
+        "spheres": [],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "geregu",
         "russian": "неправильный",
         "pos": "adj",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "geregu",
-        "russian": "кривой",
-        "pos": "adj",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "geregu",
-        "russian": "косой",
-        "pos": "adj",
-        "spheres": [],
+        "spheres": [
+            "абстракт"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -4290,10 +4470,10 @@
     },
     {
         "lirbantu": "girun",
-        "russian": "чтение",
+        "russian": "считывание",
         "pos": "n",
         "spheres": [
-            "язык"
+            "математика"
         ],
         "etymology": "",
         "comment": "",
@@ -4307,10 +4487,10 @@
     },
     {
         "lirbantu": "girun",
-        "russian": "считывание",
+        "russian": "чтение",
         "pos": "n",
         "spheres": [
-            "математика"
+            "язык"
         ],
         "etymology": "",
         "comment": "",
@@ -4550,7 +4730,9 @@
         "lirbantu": "hi",
         "russian": "и ",
         "pos": "conj",
-        "spheres": [],
+        "spheres": [
+            "грамматика"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -4565,7 +4747,9 @@
         "lirbantu": "hisan",
         "russian": "иметь",
         "pos": "v",
-        "spheres": [],
+        "spheres": [
+            "простые действия"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -4649,9 +4833,12 @@
     },
     {
         "lirbantu": "hul",
-        "russian": "плохость",
+        "russian": "зло",
         "pos": "n",
-        "spheres": [],
+        "spheres": [
+            "абстракт",
+            "религия"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -4664,12 +4851,9 @@
     },
     {
         "lirbantu": "hul",
-        "russian": "зло",
+        "russian": "плохость",
         "pos": "n",
-        "spheres": [
-            "абстракт",
-            "религия"
-        ],
+        "spheres": [],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -4827,21 +5011,6 @@
     },
     {
         "lirbantu": "inil",
-        "russian": "то что внутри",
-        "pos": "n",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "inil",
         "russian": "внутренность",
         "pos": "n",
         "spheres": [],
@@ -4873,6 +5042,21 @@
     {
         "lirbantu": "inil",
         "russian": "содержимое",
+        "pos": "n",
+        "spheres": [],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "inil",
+        "russian": "то что внутри",
         "pos": "n",
         "spheres": [],
         "etymology": "",
@@ -4974,7 +5158,9 @@
         "lirbantu": "kamhan",
         "russian": "ошибаться",
         "pos": "v",
-        "spheres": [],
+        "spheres": [
+            "простые действия"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -5004,7 +5190,9 @@
         "lirbantu": "kamhanu",
         "russian": "ошибочный",
         "pos": "adj",
-        "spheres": [],
+        "spheres": [
+            "наука"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -5019,7 +5207,9 @@
         "lirbantu": "kamhon",
         "russian": "ошибка",
         "pos": "n",
-        "spheres": [],
+        "spheres": [
+            "наука"
+        ],
         "etymology": "khmer",
         "comment": "",
         "root1": "",
@@ -5049,7 +5239,7 @@
     },
     {
         "lirbantu": "kampo",
-        "russian": "наверху",
+        "russian": "вверху",
         "pos": "adv",
         "spheres": [],
         "etymology": "",
@@ -5064,7 +5254,7 @@
     },
     {
         "lirbantu": "kampo",
-        "russian": "вверху",
+        "russian": "наверху",
         "pos": "adv",
         "spheres": [],
         "etymology": "",
@@ -5150,7 +5340,7 @@
     },
     {
         "lirbantu": "kapitan",
-        "russian": "поступать правильно",
+        "russian": "говорить правду",
         "pos": "v",
         "spheres": [
             "политика",
@@ -5169,7 +5359,7 @@
     },
     {
         "lirbantu": "kapitan",
-        "russian": "говорить правду",
+        "russian": "поступать правильно",
         "pos": "v",
         "spheres": [
             "политика",
@@ -5464,7 +5654,9 @@
         "lirbantu": "khan",
         "russian": "как ",
         "pos": "conj",
-        "spheres": [],
+        "spheres": [
+            "грамматика"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -5477,7 +5669,7 @@
     },
     {
         "lirbantu": "khananna",
-        "russian": "свод законов",
+        "russian": "конституция",
         "pos": "n",
         "spheres": [
             "общество",
@@ -5495,7 +5687,7 @@
     },
     {
         "lirbantu": "khananna",
-        "russian": "конституция",
+        "russian": "свод законов",
         "pos": "n",
         "spheres": [
             "общество",
@@ -5635,7 +5827,7 @@
     },
     {
         "lirbantu": "kharewanna",
-        "russian": "стена из кирпича",
+        "russian": "кирпичная кладка",
         "pos": "n",
         "spheres": [
             "архитектура"
@@ -5652,7 +5844,7 @@
     },
     {
         "lirbantu": "kharewanna",
-        "russian": "кирпичная кладка",
+        "russian": "стена из кирпича",
         "pos": "n",
         "spheres": [
             "архитектура"
@@ -5724,7 +5916,9 @@
         "lirbantu": "khe",
         "russian": "что ",
         "pos": "pron",
-        "spheres": [],
+        "spheres": [
+            "грамматика"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -5739,7 +5933,9 @@
         "lirbantu": "khem",
         "russian": "какой-то",
         "pos": "pron",
-        "spheres": [],
+        "spheres": [
+            "грамматика"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -5754,7 +5950,9 @@
         "lirbantu": "khepe",
         "russian": "чтобы",
         "pos": "conj",
-        "spheres": [],
+        "spheres": [
+            "грамматика"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -5769,7 +5967,9 @@
         "lirbantu": "kheth",
         "russian": "куда",
         "pos": "pron",
-        "spheres": [],
+        "spheres": [
+            "грамматика"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -5784,7 +5984,9 @@
         "lirbantu": "khetho",
         "russian": "где",
         "pos": "pron",
-        "spheres": [],
+        "spheres": [
+            "грамматика"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -5833,9 +6035,11 @@
     },
     {
         "lirbantu": "kho",
-        "russian": "кто",
+        "russian": "когда",
         "pos": "pron",
-        "spheres": [],
+        "spheres": [
+            "грамматика"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -5848,9 +6052,11 @@
     },
     {
         "lirbantu": "kho",
-        "russian": "когда",
+        "russian": "кто",
         "pos": "pron",
-        "spheres": [],
+        "spheres": [
+            "грамматика"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -5899,7 +6105,9 @@
         "lirbantu": "khu",
         "russian": "какой",
         "pos": "pron",
-        "spheres": [],
+        "spheres": [
+            "грамматика"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -5914,7 +6122,9 @@
         "lirbantu": "khu",
         "russian": "который",
         "pos": "pron",
-        "spheres": [],
+        "spheres": [
+            "грамматика"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -6067,7 +6277,9 @@
         "lirbantu": "krup",
         "russian": "что-то",
         "pos": "pron",
-        "spheres": [],
+        "spheres": [
+            "грамматика"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -6148,8 +6360,8 @@
     },
     {
         "lirbantu": "ksaruu",
-        "russian": "нападающий",
-        "pos": "pr part",
+        "russian": "драчун",
+        "pos": "n",
         "spheres": [
             "военное"
         ],
@@ -6165,8 +6377,8 @@
     },
     {
         "lirbantu": "ksaruu",
-        "russian": "драчун",
-        "pos": "n",
+        "russian": "нападающий",
+        "pos": "pr part",
         "spheres": [
             "военное"
         ],
@@ -6409,7 +6621,9 @@
         "lirbantu": "laran",
         "russian": "мочь",
         "pos": "v",
-        "spheres": [],
+        "spheres": [
+            "простые действия"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -6425,7 +6639,8 @@
         "russian": "молоко",
         "pos": "n",
         "spheres": [
-            "еда"
+            "еда",
+            "природа"
         ],
         "etymology": "",
         "comment": "",
@@ -6458,7 +6673,9 @@
         "lirbantu": "lebrex",
         "russian": "древность",
         "pos": "n",
-        "spheres": [],
+        "spheres": [
+            "общество"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -6473,7 +6690,9 @@
         "lirbantu": "lebrexu",
         "russian": "древний",
         "pos": "adj",
-        "spheres": [],
+        "spheres": [
+            "общество"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -6639,7 +6858,7 @@
     },
     {
         "lirbantu": "lokhox",
-        "russian": "стилус",
+        "russian": "ручка",
         "pos": "n",
         "spheres": [
             "язык"
@@ -6656,7 +6875,7 @@
     },
     {
         "lirbantu": "lokhox",
-        "russian": "ручка",
+        "russian": "стилус",
         "pos": "n",
         "spheres": [
             "язык"
@@ -7274,7 +7493,9 @@
         "lirbantu": "mis",
         "russian": "только",
         "pos": "adv",
-        "spheres": [],
+        "spheres": [
+            "грамматика"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -7289,7 +7510,9 @@
         "lirbantu": "mise",
         "russian": "только",
         "pos": "adv",
-        "spheres": [],
+        "spheres": [
+            "грамматика"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -7304,7 +7527,9 @@
         "lirbantu": "mo",
         "russian": "безл. (one)",
         "pos": "pron",
-        "spheres": [],
+        "spheres": [
+            "грамматика"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -7319,7 +7544,9 @@
         "lirbantu": "mo ",
         "russian": "себя ",
         "pos": "pron",
-        "spheres": [],
+        "spheres": [
+            "грамматика"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -7385,7 +7612,9 @@
         "lirbantu": "mondelu",
         "russian": "вокруг",
         "pos": "adv",
-        "spheres": [],
+        "spheres": [
+            "грамматика"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -7418,7 +7647,9 @@
         "lirbantu": "mu ",
         "russian": "с ",
         "pos": "prep",
-        "spheres": [],
+        "spheres": [
+            "грамматика"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -7433,7 +7664,9 @@
         "lirbantu": "muchomna e",
         "russian": "с помощью",
         "pos": "prep",
-        "spheres": [],
+        "spheres": [
+            "грамматика"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -7618,7 +7851,9 @@
         "lirbantu": "naxó",
         "russian": "очень",
         "pos": "adv",
-        "spheres": [],
+        "spheres": [
+            "грамматика"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -7633,7 +7868,9 @@
         "lirbantu": "ne",
         "russian": "это ",
         "pos": "pron",
-        "spheres": [],
+        "spheres": [
+            "грамматика"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -7683,7 +7920,9 @@
         "lirbantu": "nen",
         "russian": "эти ",
         "pos": "pron",
-        "spheres": [],
+        "spheres": [
+            "грамматика"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -7716,7 +7955,9 @@
         "lirbantu": "nu",
         "russian": "не ",
         "pos": "interj",
-        "spheres": [],
+        "spheres": [
+            "грамматика"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -7748,7 +7989,9 @@
         "lirbantu": "nun",
         "russian": "нет ",
         "pos": "interj",
-        "spheres": [],
+        "spheres": [
+            "грамматика"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -7982,12 +8225,12 @@
     },
     {
         "lirbantu": "omextan",
-        "russian": "смешивать",
+        "russian": "мешать",
         "pos": "v",
         "spheres": [
             "еда"
         ],
-        "etymology": "",
+        "etymology": "tajik",
         "comment": "",
         "root1": "",
         "root2": "",
@@ -7999,12 +8242,12 @@
     },
     {
         "lirbantu": "omextan",
-        "russian": "мешать",
+        "russian": "смешивать",
         "pos": "v",
         "spheres": [
             "еда"
         ],
-        "etymology": "tajik",
+        "etymology": "",
         "comment": "",
         "root1": "",
         "root2": "",
@@ -8068,7 +8311,7 @@
     },
     {
         "lirbantu": "omextun",
-        "russian": "смешивание",
+        "russian": "приготовление лекарств",
         "pos": "n",
         "spheres": [
             "еда"
@@ -8102,7 +8345,7 @@
     },
     {
         "lirbantu": "omextun",
-        "russian": "приготовление лекарств",
+        "russian": "смешивание",
         "pos": "n",
         "spheres": [
             "еда"
@@ -8220,7 +8463,9 @@
         "lirbantu": "par",
         "russian": "творительный падеж / by",
         "pos": "prep",
-        "spheres": [],
+        "spheres": [
+            "грамматика"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -8252,7 +8497,9 @@
         "lirbantu": "pe",
         "russian": "бы ",
         "pos": "conj",
-        "spheres": [],
+        "spheres": [
+            "грамматика"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -8317,7 +8564,7 @@
     },
     {
         "lirbantu": "phaaga",
-        "russian": "язык",
+        "russian": "говорение",
         "pos": "n",
         "spheres": [
             "язык"
@@ -8351,7 +8598,7 @@
     },
     {
         "lirbantu": "phaaga",
-        "russian": "говорение",
+        "russian": "язык",
         "pos": "n",
         "spheres": [
             "язык"
@@ -8440,7 +8687,10 @@
         "lirbantu": "phat",
         "russian": "путь",
         "pos": "n",
-        "spheres": [],
+        "spheres": [
+            "абстракт",
+            "общество"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -8523,7 +8773,9 @@
         "lirbantu": "po",
         "russian": "на ",
         "pos": "prep",
-        "spheres": [],
+        "spheres": [
+            "грамматика"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -8587,12 +8839,12 @@
     },
     {
         "lirbantu": "pranan",
-        "russian": "прощать",
+        "russian": "простить",
         "pos": "v",
         "spheres": [
             "эмоции"
         ],
-        "etymology": "khmer",
+        "etymology": "",
         "comment": "",
         "root1": "",
         "root2": "",
@@ -8604,12 +8856,12 @@
     },
     {
         "lirbantu": "pranan",
-        "russian": "простить",
+        "russian": "прощать",
         "pos": "v",
         "spheres": [
             "эмоции"
         ],
-        "etymology": "",
+        "etymology": "khmer",
         "comment": "",
         "root1": "",
         "root2": "",
@@ -8640,7 +8892,9 @@
         "lirbantu": "pripan",
         "russian": "двигать",
         "pos": "v",
-        "spheres": [],
+        "spheres": [
+            "простые действия"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -8704,7 +8958,7 @@
         "description": ""
     },
     {
-        "lirbantu": "pripuu (если человек)",
+        "lirbantu": "pripuu",
         "russian": "лидер",
         "pos": "n",
         "spheres": [
@@ -8822,7 +9076,9 @@
         "lirbantu": "rawono",
         "russian": "между",
         "pos": "prep",
-        "spheres": [],
+        "spheres": [
+            "грамматика"
+        ],
         "etymology": "khmer",
         "comment": "",
         "root1": "",
@@ -8852,7 +9108,9 @@
         "lirbantu": "ron",
         "russian": "меж",
         "pos": "prep",
-        "spheres": [],
+        "spheres": [
+            "грамматика"
+        ],
         "etymology": "short version of rawono",
         "comment": "",
         "root1": "",
@@ -9244,7 +9502,9 @@
         "lirbantu": "se ",
         "russian": "то ",
         "pos": "pron",
-        "spheres": [],
+        "spheres": [
+            "грамматика"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -9310,7 +9570,9 @@
         "lirbantu": "sen ",
         "russian": "те ",
         "pos": "pron",
-        "spheres": [],
+        "spheres": [
+            "грамматика"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -9712,7 +9974,7 @@
     },
     {
         "lirbantu": "shurupan",
-        "russian": "освящать",
+        "russian": "делать святым",
         "pos": "v",
         "spheres": [
             "религия"
@@ -9729,7 +9991,7 @@
     },
     {
         "lirbantu": "shurupan",
-        "russian": "делать святым",
+        "russian": "освящать",
         "pos": "v",
         "spheres": [
             "религия"
@@ -9831,6 +10093,23 @@
     },
     {
         "lirbantu": "shurupuun",
+        "russian": "освятитель",
+        "pos": "n",
+        "spheres": [
+            "религия"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "shurupuun",
         "russian": "священник",
         "pos": "n",
         "spheres": [
@@ -9849,23 +10128,6 @@
     {
         "lirbantu": "shurupuun",
         "russian": "экзорцист",
-        "pos": "n",
-        "spheres": [
-            "религия"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "shurupuun",
-        "russian": "освятитель",
         "pos": "n",
         "spheres": [
             "религия"
@@ -9901,7 +10163,9 @@
         "lirbantu": "so",
         "russian": "тогда",
         "pos": "pron",
-        "spheres": [],
+        "spheres": [
+            "грамматика"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -10143,7 +10407,7 @@
     },
     {
         "lirbantu": "sorudegistan",
-        "russian": "играть музыку",
+        "russian": "делать музыку",
         "pos": "v",
         "spheres": [
             "искусство"
@@ -10160,7 +10424,7 @@
     },
     {
         "lirbantu": "sorudegistan",
-        "russian": "делать музыку",
+        "russian": "играть музыку",
         "pos": "v",
         "spheres": [
             "искусство"
@@ -10501,7 +10765,7 @@
     },
     {
         "lirbantu": "thoketho",
-        "russian": "рабочее место",
+        "russian": "работа (место)",
         "pos": "n",
         "spheres": [
             "технологии/работа"
@@ -10518,7 +10782,7 @@
     },
     {
         "lirbantu": "thoketho",
-        "russian": "работа (место)",
+        "russian": "рабочее место",
         "pos": "n",
         "spheres": [
             "технологии/работа"
@@ -10717,11 +10981,11 @@
         "description": ""
     },
     {
-        "lirbantu": "Umun",
-        "russian": "Умун, богиня весны",
-        "pos": "pron",
+        "lirbantu": "umun",
+        "russian": "мать",
+        "pos": "n",
         "spheres": [
-            "имя"
+            "семья"
         ],
         "etymology": "",
         "comment": "",
@@ -10734,11 +10998,11 @@
         "description": ""
     },
     {
-        "lirbantu": "umun",
-        "russian": "мать",
-        "pos": "n",
+        "lirbantu": "Umun",
+        "russian": "Умун, богиня весны",
+        "pos": "pron",
         "spheres": [
-            "семья"
+            "имя"
         ],
         "etymology": "",
         "comment": "",
@@ -11008,10 +11272,10 @@
     },
     {
         "lirbantu": "uskhi",
-        "russian": "пустота",
-        "pos": "n",
+        "russian": "0",
+        "pos": "num",
         "spheres": [
-            "абстракт"
+            "математика"
         ],
         "etymology": "",
         "comment": "",
@@ -11025,10 +11289,10 @@
     },
     {
         "lirbantu": "uskhi",
-        "russian": "0",
-        "pos": "num",
+        "russian": "пустота",
+        "pos": "n",
         "spheres": [
-            "математика"
+            "абстракт"
         ],
         "etymology": "",
         "comment": "",
@@ -11244,7 +11508,9 @@
         "lirbantu": "warsan",
         "russian": "будить",
         "pos": "v",
-        "spheres": [],
+        "spheres": [
+            "простые действия"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -11356,7 +11622,7 @@
     },
     {
         "lirbantu": "waysan",
-        "russian": "цвести",
+        "russian": "расцветать",
         "pos": "v",
         "spheres": [
             "природа"
@@ -11373,7 +11639,7 @@
     },
     {
         "lirbantu": "waysan",
-        "russian": "расцветать",
+        "russian": "цвести",
         "pos": "v",
         "spheres": [
             "природа"
@@ -12303,6 +12569,283 @@
     },
     {
         "lirbantu": "",
+        "russian": "банк",
+        "pos": "n",
+        "spheres": [
+            "общество"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "бегун",
+        "pos": "n",
+        "spheres": [
+            "спорт"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "бежать",
+        "pos": "v",
+        "spheres": [
+            "спорт"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "без",
+        "pos": "prep",
+        "spheres": [],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "более",
+        "pos": "adj",
+        "spheres": [],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "брат",
+        "pos": "n",
+        "spheres": [
+            "семья"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "брать",
+        "pos": "v",
+        "spheres": [],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "бревно",
+        "pos": "n",
+        "spheres": [
+            "природа"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "варить пиво",
+        "pos": "v",
+        "spheres": [
+            "еда",
+            "технологии/работа"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "вдвоём",
+        "pos": "adv",
+        "spheres": [],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "весна",
+        "pos": "n",
+        "spheres": [
+            "природа"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "вечер",
+        "pos": "",
+        "spheres": [
+            "время"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "вещание",
+        "pos": "n",
+        "spheres": [],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "взятие",
+        "pos": "n",
+        "spheres": [
+            "военное",
+            "простые действия"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "взятка",
+        "pos": "n",
+        "spheres": [
+            "экономика"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "взятый",
+        "pos": "adj",
+        "spheres": [],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "вместо",
+        "pos": "prep",
+        "spheres": [],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
         "russian": "вниз",
         "pos": "adv",
         "spheres": [
@@ -12337,10 +12880,25 @@
     },
     {
         "lirbantu": "",
-        "russian": "вперед",
+        "russian": "внутри",
         "pos": "adv",
+        "spheres": [],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "возвращаться",
+        "pos": "v",
         "spheres": [
-            "абстракт"
+            "путешествия"
         ],
         "etymology": "",
         "comment": "",
@@ -12354,8 +12912,41 @@
     },
     {
         "lirbantu": "",
-        "russian": "всё ",
-        "pos": "pron",
+        "russian": "возлюбленный",
+        "pos": "n",
+        "spheres": [
+            "семья",
+            "эмоции"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "вот",
+        "pos": "interj",
+        "spheres": [],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "вперед",
+        "pos": "adv",
         "spheres": [
             "абстракт"
         ],
@@ -12375,6 +12966,55 @@
         "pos": "pron",
         "spheres": [
             "абстракт"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "входить",
+        "pos": "v",
+        "spheres": [],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "вчера",
+        "pos": "adv",
+        "spheres": [
+            "время"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "гонка",
+        "pos": "n",
+        "spheres": [
+            "спорт"
         ],
         "etymology": "",
         "comment": "",
@@ -12422,11 +13062,124 @@
     },
     {
         "lirbantu": "",
+        "russian": "громкоговоритель (инструмент)",
+        "pos": "n",
+        "spheres": [
+            "технологии/работа"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
         "russian": "громкость",
         "pos": "adv",
         "spheres": [
             "абстракт"
         ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "грузчик",
+        "pos": "n",
+        "spheres": [
+            "технологии/работа"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "губа",
+        "pos": "n",
+        "spheres": [
+            "тело"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "давилка",
+        "pos": "n",
+        "spheres": [],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "давить",
+        "pos": "v",
+        "spheres": [],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "давление",
+        "pos": "n",
+        "spheres": [
+            "наука"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "двигаться",
+        "pos": "v",
+        "spheres": [],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -12456,10 +13209,10 @@
     },
     {
         "lirbantu": "",
-        "russian": "зад",
-        "pos": "n",
+        "russian": "делать прическу",
+        "pos": "v",
         "spheres": [
-            "абстракт"
+            "тело"
         ],
         "etymology": "",
         "comment": "",
@@ -12473,112 +13226,9 @@
     },
     {
         "lirbantu": "",
-        "russian": "лучше",
-        "pos": "adj",
+        "russian": "делать сладким",
+        "pos": "v",
         "spheres": [
-            "абстракт"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "низ",
-        "pos": "n",
-        "spheres": [
-            "абстракт"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "остановка (абстрактно)",
-        "pos": "n",
-        "spheres": [
-            "абстракт"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "известь",
-        "pos": "n",
-        "spheres": [
-            "архитектура"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "крыша",
-        "pos": "n",
-        "spheres": [
-            "архитектура"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "построенный",
-        "pos": "adj",
-        "spheres": [
-            "архитектура"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "кафе",
-        "pos": "n",
-        "spheres": [
-            "архитектура",
             "еда"
         ],
         "etymology": "",
@@ -12593,237 +13243,9 @@
     },
     {
         "lirbantu": "",
-        "russian": "суд (здание)",
+        "russian": "добыча",
         "pos": "n",
-        "spheres": [
-            "архитектура",
-            "общество",
-            "политика"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "спальня",
-        "pos": "n",
-        "spheres": [
-            "архитектура",
-            "семья"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "строить",
-        "pos": "v",
-        "spheres": [
-            "архитектура",
-            "технологии/работа"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "место происшествия\nполе битвы",
-        "pos": "n",
-        "spheres": [
-            "военное"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "место убийства",
-        "pos": "n",
-        "spheres": [
-            "военное"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "мощь",
-        "pos": "n",
-        "spheres": [
-            "военное"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "разрушать",
-        "pos": "v",
-        "spheres": [
-            "военное"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "разрушающий",
-        "pos": "pr part",
-        "spheres": [
-            "военное"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "разрушение",
-        "pos": "n",
-        "spheres": [
-            "военное"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "разрушенный",
-        "pos": "adj",
-        "spheres": [
-            "военное"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "царапина\nслабый удар",
-        "pos": "n",
-        "spheres": [
-            "военное"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "взятие",
-        "pos": "n",
-        "spheres": [
-            "военное",
-            "простые действия"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "вечер",
-        "pos": "",
-        "spheres": [
-            "время"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "вчера",
-        "pos": "adv",
-        "spheres": [
-            "время"
-        ],
+        "spheres": [],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -12853,10 +13275,242 @@
     },
     {
         "lirbantu": "",
+        "russian": "должен",
+        "pos": "v",
+        "spheres": [],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "доска",
+        "pos": "n",
+        "spheres": [
+            "природа"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "достигатель",
+        "pos": "n",
+        "spheres": [],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "дочь",
+        "pos": "n",
+        "spheres": [
+            "семья"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "дровосек",
+        "pos": "n",
+        "spheres": [
+            "технологии/работа"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "друг",
+        "pos": "n",
+        "spheres": [
+            "эмоции",
+            "семья"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "дружелюбный",
+        "pos": "adj",
+        "spheres": [
+            "общество"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "дружественный",
+        "pos": "adj",
+        "spheres": [
+            "общество"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "духовные практики",
+        "pos": "n",
+        "spheres": [
+            "религия"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "если",
+        "pos": "conj",
+        "spheres": [],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "жаворонок",
+        "pos": "n",
+        "spheres": [
+            "природа",
+            "птица"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "ждать",
+        "pos": "v",
+        "spheres": [],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "жизненная энергия",
+        "pos": "n",
+        "spheres": [
+            "религия"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
         "russian": "завтра",
         "pos": "",
         "spheres": [
             "время"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "зад",
+        "pos": "n",
+        "spheres": [
+            "абстракт"
         ],
         "etymology": "",
         "comment": "",
@@ -12904,6 +13558,323 @@
     },
     {
         "lirbantu": "",
+        "russian": "заставлять писать",
+        "pos": "v",
+        "spheres": [
+            "язык"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "заяц",
+        "pos": "n",
+        "spheres": [
+            "природа"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "звучать",
+        "pos": "v",
+        "spheres": [],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "здесь",
+        "pos": "adv",
+        "spheres": [],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "здоровый",
+        "pos": "adj",
+        "spheres": [
+            "тело"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "здоровье",
+        "pos": "n",
+        "spheres": [
+            "тело"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "зима",
+        "pos": "n",
+        "spheres": [
+            "природа"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "игра",
+        "pos": "n",
+        "spheres": [
+            "спорт"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "играть",
+        "pos": "v",
+        "spheres": [
+            "спорт",
+            "искусство"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "известь",
+        "pos": "n",
+        "spheres": [
+            "архитектура"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "изменение",
+        "pos": "n",
+        "spheres": [],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "или ",
+        "pos": "conj",
+        "spheres": [],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "кабак",
+        "pos": "n",
+        "spheres": [
+            "еда",
+            "архитектура"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "каждый",
+        "pos": "adj",
+        "spheres": [],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "кафе",
+        "pos": "n",
+        "spheres": [
+            "архитектура",
+            "еда"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "каштановый цвет",
+        "pos": "adj",
+        "spheres": [
+            "цвета"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "квакать",
+        "pos": "v",
+        "spheres": [
+            "природа"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "квакушка",
+        "pos": "n",
+        "spheres": [
+            "природа"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "кондитер",
+        "pos": "n",
+        "spheres": [
+            "еда",
+            "технологии/работа"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
         "russian": "конец",
         "pos": "n",
         "spheres": [
@@ -12921,11 +13892,455 @@
     },
     {
         "lirbantu": "",
+        "russian": "кот",
+        "pos": "n",
+        "spheres": [
+            "природа"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "крик",
+        "pos": "n",
+        "spheres": [
+            "тело"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "кричать",
+        "pos": "v",
+        "spheres": [
+            "тело"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "крыша",
+        "pos": "n",
+        "spheres": [
+            "архитектура"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "ладно",
+        "pos": "interj",
+        "spheres": [],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "лазание",
+        "pos": "n",
+        "spheres": [],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "лево",
+        "pos": "n",
+        "spheres": [],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "лето",
+        "pos": "n",
+        "spheres": [
+            "природа"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "лиса",
+        "pos": "n",
+        "spheres": [
+            "природа"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "лучше",
+        "pos": "adj",
+        "spheres": [
+            "абстракт"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "любить",
+        "pos": "v",
+        "spheres": [
+            "эмоции",
+            "семья"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "любовь",
+        "pos": "n",
+        "spheres": [
+            "эмоции",
+            "семья"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "любящий",
+        "pos": "pr part",
+        "spheres": [
+            "эмоции"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "лягушка",
+        "pos": "n",
+        "spheres": [
+            "природа"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "магазин",
+        "pos": "n",
+        "spheres": [
+            "экономика"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "меньше",
+        "pos": "adj",
+        "spheres": [],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "менять",
+        "pos": "v",
+        "spheres": [
+            "простые действия"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "место для активного туризма, кемпинг",
+        "pos": "",
+        "spheres": [
+            "путешествия"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "место убийства",
+        "pos": "n",
+        "spheres": [
+            "военное"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "мимо",
+        "pos": "adv",
+        "spheres": [],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "молчание",
+        "pos": "n",
+        "spheres": [],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "мощь",
+        "pos": "n",
+        "spheres": [
+            "военное"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "мышь",
+        "pos": "n",
+        "spheres": [
+            "природа"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "надежда",
+        "pos": "n",
+        "spheres": [
+            "религия",
+            "эмоции"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "назад",
+        "pos": "adv",
+        "spheres": [],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "найти",
+        "pos": "v",
+        "spheres": [],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
         "russian": "настоящее (время)",
         "pos": "n",
         "spheres": [
             "время"
         ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "настоящий",
+        "pos": "adj",
+        "spheres": [],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -13006,10 +14421,10 @@
     },
     {
         "lirbantu": "",
-        "russian": "сейчас",
-        "pos": "adv",
+        "russian": "низ",
+        "pos": "n",
         "spheres": [
-            "время"
+            "абстракт"
         ],
         "etymology": "",
         "comment": "",
@@ -13023,10 +14438,249 @@
     },
     {
         "lirbantu": "",
-        "russian": "делать сладким",
+        "russian": "низкий",
+        "pos": "adj",
+        "spheres": [
+            "тело"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "ничто",
+        "pos": "n",
+        "spheres": [],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "нора",
+        "pos": "n",
+        "spheres": [
+            "природа"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "ношение",
+        "pos": "n",
+        "spheres": [],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "о ",
+        "pos": "prep",
+        "spheres": [],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "обнимать (ся)",
         "pos": "v",
         "spheres": [
-            "еда"
+            "эмоции"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "обновлять",
+        "pos": "v",
+        "spheres": [],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "обьятие",
+        "pos": "n",
+        "spheres": [
+            "эмоции"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "ожидание",
+        "pos": "n",
+        "spheres": [],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "оранжевый",
+        "pos": "adj",
+        "spheres": [
+            "цвета"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "осень",
+        "pos": "n",
+        "spheres": [
+            "природа"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "останавливание",
+        "pos": "n",
+        "spheres": [],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "останавливать",
+        "pos": "v",
+        "spheres": [],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "останавливаться",
+        "pos": "v",
+        "spheres": [],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "остановка (абстрактно)",
+        "pos": "n",
+        "spheres": [
+            "абстракт"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "открывать",
+        "pos": "v",
+        "spheres": [
+            "простые действия"
         ],
         "etymology": "",
         "comment": "",
@@ -13057,10 +14711,10 @@
     },
     {
         "lirbantu": "",
-        "russian": "подсластитель (вещество)",
+        "russian": "парикмахер",
         "pos": "n",
         "spheres": [
-            "еда"
+            "технологии/работа"
         ],
         "etymology": "",
         "comment": "",
@@ -13074,10 +14728,10 @@
     },
     {
         "lirbantu": "",
-        "russian": "поилка",
+        "russian": "парк развлечений",
         "pos": "n",
         "spheres": [
-            "еда"
+            "путешествия"
         ],
         "etymology": "",
         "comment": "",
@@ -13091,26 +14745,43 @@
     },
     {
         "lirbantu": "",
-        "russian": "сладкий",
-        "pos": "adj",
-        "spheres": [
-            "еда"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "сладость\nконфета",
+        "russian": "пеночка",
         "pos": "n",
         "spheres": [
+            "природа",
+            "птица"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "перед",
+        "pos": "prep",
+        "spheres": [],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "пивоварение",
+        "pos": "n",
+        "spheres": [
+            "технологии/работа",
             "еда"
         ],
         "etymology": "",
@@ -13125,7 +14796,7 @@
     },
     {
         "lirbantu": "",
-        "russian": "кабак",
+        "russian": "пивоварня",
         "pos": "n",
         "spheres": [
             "еда",
@@ -13143,11 +14814,10 @@
     },
     {
         "lirbantu": "",
-        "russian": "кабак\nпивоварня",
+        "russian": "пила",
         "pos": "n",
         "spheres": [
-            "еда",
-            "архитектура"
+            "технологии/работа"
         ],
         "etymology": "",
         "comment": "",
@@ -13161,10 +14831,26 @@
     },
     {
         "lirbantu": "",
-        "russian": "варить пиво",
+        "russian": "пиление",
+        "pos": "n",
+        "spheres": [
+            "технологии/работа"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "пилить",
         "pos": "v",
         "spheres": [
-            "еда",
             "технологии/работа"
         ],
         "etymology": "",
@@ -13179,12 +14865,43 @@
     },
     {
         "lirbantu": "",
-        "russian": "кондитер",
+        "russian": "пильщик",
         "pos": "n",
         "spheres": [
-            "еда",
             "технологии/работа"
         ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "плотник",
+        "pos": "n",
+        "spheres": [
+            "технологии/работа"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "по ",
+        "pos": "prep",
+        "spheres": [],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -13215,10 +14932,25 @@
     },
     {
         "lirbantu": "",
-        "russian": "сцена",
+        "russian": "повод для счастья",
+        "pos": "n",
+        "spheres": [],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "подсластитель (вещество)",
         "pos": "n",
         "spheres": [
-            "искусство"
+            "еда"
         ],
         "etymology": "",
         "comment": "",
@@ -13232,10 +14964,10 @@
     },
     {
         "lirbantu": "",
-        "russian": "танец",
-        "pos": "n",
+        "russian": "пожалуйста",
+        "pos": "interj",
         "spheres": [
-            "искусство"
+            "эмоции"
         ],
         "etymology": "",
         "comment": "",
@@ -13249,10 +14981,59 @@
     },
     {
         "lirbantu": "",
-        "russian": "танцевать",
+        "russian": "поилка",
+        "pos": "n",
+        "spheres": [
+            "еда"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "покрытие",
+        "pos": "n",
+        "spheres": [],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "покупатель",
+        "pos": "n",
+        "spheres": [
+            "экономика"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "покупать",
         "pos": "v",
         "spheres": [
-            "искусство"
+            "экономика"
         ],
         "etymology": "",
         "comment": "",
@@ -13266,96 +15047,10 @@
     },
     {
         "lirbantu": "",
-        "russian": "танцор",
+        "russian": "покупка",
         "pos": "n",
         "spheres": [
-            "искусство"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "танцпол",
-        "pos": "n",
-        "spheres": [
-            "искусство"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "стих",
-        "pos": "n",
-        "spheres": [
-            "искусство",
-            "язык"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "давление",
-        "pos": "n",
-        "spheres": [
-            "наука"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "лекция\nчтения",
-        "pos": "n",
-        "spheres": [
-            "наука"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "находка\nоткрытие чего-л нового",
-        "pos": "n",
-        "spheres": [
-            "наука"
+            "экономика"
         ],
         "etymology": "",
         "comment": "",
@@ -13420,79 +15115,10 @@
     },
     {
         "lirbantu": "",
-        "russian": "ум",
-        "pos": "n",
-        "spheres": [
-            "наука"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "факт",
-        "pos": "n",
-        "spheres": [
-            "наука"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "исследование",
-        "pos": "n",
-        "spheres": [
-            "наука",
-            "технологии/работа"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "банк",
-        "pos": "n",
-        "spheres": [
-            "общество"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "дружелюбный",
+        "russian": "построенный",
         "pos": "adj",
         "spheres": [
-            "общество"
+            "архитектура"
         ],
         "etymology": "",
         "comment": "",
@@ -13506,27 +15132,10 @@
     },
     {
         "lirbantu": "",
-        "russian": "дружественный",
-        "pos": "adj",
-        "spheres": [
-            "общество"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "расселение",
+        "russian": "поцелуй",
         "pos": "n",
         "spheres": [
-            "общество"
+            "семья"
         ],
         "etymology": "",
         "comment": "",
@@ -13540,11 +15149,9 @@
     },
     {
         "lirbantu": "",
-        "russian": "сделка",
-        "pos": "n",
-        "spheres": [
-            "общество"
-        ],
+        "russian": "почему",
+        "pos": "pron",
+        "spheres": [],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -13575,12 +15182,9 @@
     },
     {
         "lirbantu": "",
-        "russian": "расследование",
+        "russian": "приветствие",
         "pos": "n",
-        "spheres": [
-            "общество",
-            "политика"
-        ],
+        "spheres": [],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -13593,12 +15197,9 @@
     },
     {
         "lirbantu": "",
-        "russian": "личность\nперсона",
-        "pos": "n",
-        "spheres": [
-            "общество",
-            "природа"
-        ],
+        "russian": "принимающий",
+        "pos": "pr part",
+        "spheres": [],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -13611,453 +15212,7 @@
     },
     {
         "lirbantu": "",
-        "russian": "родина",
-        "pos": "n",
-        "spheres": [
-            "общество",
-            "семья"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "бревно",
-        "pos": "n",
-        "spheres": [
-            "природа"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "весна",
-        "pos": "n",
-        "spheres": [
-            "природа"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "ветка\nветвь",
-        "pos": "n",
-        "spheres": [
-            "природа"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "доска",
-        "pos": "n",
-        "spheres": [
-            "природа"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "заяц",
-        "pos": "n",
-        "spheres": [
-            "природа"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "зима",
-        "pos": "n",
-        "spheres": [
-            "природа"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "квакать",
-        "pos": "v",
-        "spheres": [
-            "природа"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "квакушка",
-        "pos": "n",
-        "spheres": [
-            "природа"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "кот",
-        "pos": "n",
-        "spheres": [
-            "природа"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "лето",
-        "pos": "n",
-        "spheres": [
-            "природа"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "лиса",
-        "pos": "n",
-        "spheres": [
-            "природа"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "лягушка",
-        "pos": "n",
-        "spheres": [
-            "природа"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "мышь",
-        "pos": "n",
-        "spheres": [
-            "природа"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "нора",
-        "pos": "n",
-        "spheres": [
-            "природа"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "осень",
-        "pos": "n",
-        "spheres": [
-            "природа"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "размножаться",
-        "pos": "v",
-        "spheres": [
-            "природа"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "размножение",
-        "pos": "n",
-        "spheres": [
-            "природа"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "семя",
-        "pos": "n",
-        "spheres": [
-            "природа"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "смола",
-        "pos": "n",
-        "spheres": [
-            "природа"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "утро",
-        "pos": "n",
-        "spheres": [
-            "природа"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "жаворонок",
-        "pos": "n",
-        "spheres": [
-            "природа",
-            "птица"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "пеночка",
-        "pos": "n",
-        "spheres": [
-            "природа",
-            "птица"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "сеять",
-        "pos": "v",
-        "spheres": [
-            "природа",
-            "технологии/работа"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "менять",
-        "pos": "v",
-        "spheres": [
-            "простые действия"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "открывать",
-        "pos": "v",
-        "spheres": [
-            "простые действия"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "возвращаться",
+        "russian": "приходить",
         "pos": "v",
         "spheres": [
             "путешествия"
@@ -14074,10 +15229,10 @@
     },
     {
         "lirbantu": "",
-        "russian": "место для активного туризма, кемпинг",
-        "pos": "",
+        "russian": "продавать",
+        "pos": "v",
         "spheres": [
-            "путешествия"
+            "экономика"
         ],
         "etymology": "",
         "comment": "",
@@ -14091,10 +15246,200 @@
     },
     {
         "lirbantu": "",
-        "russian": "парк развлечений",
+        "russian": "продавец",
         "pos": "n",
         "spheres": [
-            "путешествия"
+            "экономика"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "продажа",
+        "pos": "n",
+        "spheres": [
+            "экономика"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "продать",
+        "pos": "v",
+        "spheres": [
+            "экономика"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "пророк",
+        "pos": "n",
+        "spheres": [
+            "религия"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "просить",
+        "pos": "v",
+        "spheres": [
+            "язык"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "просьба",
+        "pos": "n",
+        "spheres": [
+            "язык"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "процесс создания прически",
+        "pos": "n",
+        "spheres": [
+            "тело"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "прошу",
+        "pos": "interj",
+        "spheres": [
+            "эмоции"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "прощание",
+        "pos": "n",
+        "spheres": [
+            "эмоции"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "прыгать",
+        "pos": "v",
+        "spheres": [
+            "тело",
+            "спорт"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "прыгун",
+        "pos": "n",
+        "spheres": [
+            "тело",
+            "спорт"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "прыжок",
+        "pos": "n",
+        "spheres": [
+            "тело",
+            "спорт"
         ],
         "etymology": "",
         "comment": "",
@@ -14193,10 +15538,10 @@
     },
     {
         "lirbantu": "",
-        "russian": "приходить",
-        "pos": "v",
+        "russian": "пылесос",
+        "pos": "n",
         "spheres": [
-            "путешествия"
+            "технологии/работа"
         ],
         "etymology": "",
         "comment": "",
@@ -14228,2408 +15573,111 @@
     },
     {
         "lirbantu": "",
-        "russian": "духовные практики",
-        "pos": "n",
-        "spheres": [
-            "религия"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "жизненная энергия",
-        "pos": "n",
-        "spheres": [
-            "религия"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "пророк",
-        "pos": "n",
-        "spheres": [
-            "религия"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "религия",
-        "pos": "n",
-        "spheres": [
-            "религия"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "суеверие",
-        "pos": "n",
-        "spheres": [
-            "религия"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "надежда",
-        "pos": "n",
-        "spheres": [
-            "религия",
-            "эмоции"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "брат",
-        "pos": "n",
-        "spheres": [
-            "семья"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "дочь",
-        "pos": "n",
-        "spheres": [
-            "семья"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "семья",
-        "pos": "n",
-        "spheres": [
-            "семья"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "клан\nродословная",
-        "pos": "n",
-        "spheres": [
-            "семья"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "поцелуй",
-        "pos": "n",
-        "spheres": [
-            "семья"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "ребенок",
-        "pos": "n",
-        "spheres": [
-            "семья"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "родитель",
-        "pos": "n",
-        "spheres": [
-            "семья"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "родители",
-        "pos": "n",
-        "spheres": [
-            "семья"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "семья",
-        "pos": "n",
-        "spheres": [
-            "семья"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "сестра",
-        "pos": "n",
-        "spheres": [
-            "семья"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "сын",
-        "pos": "n",
-        "spheres": [
-            "семья"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "возлюбленный",
-        "pos": "n",
-        "spheres": [
-            "семья",
-            "эмоции"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "бегун",
-        "pos": "n",
-        "spheres": [
-            "спорт"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "бежать",
-        "pos": "v",
-        "spheres": [
-            "спорт"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "гонка",
-        "pos": "n",
-        "spheres": [
-            "спорт"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "игра",
-        "pos": "n",
-        "spheres": [
-            "спорт"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "скакалка\nбатут",
-        "pos": "n",
-        "spheres": [
-            "спорт"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "скачки",
-        "pos": "n",
-        "spheres": [
-            "спорт"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "играть",
-        "pos": "v",
-        "spheres": [
-            "спорт",
-            "искусство"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "губа",
-        "pos": "n",
-        "spheres": [
-            "тело"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "делать прическу",
-        "pos": "v",
-        "spheres": [
-            "тело"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "здоровый",
-        "pos": "adj",
-        "spheres": [
-            "тело"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "здоровье",
-        "pos": "n",
-        "spheres": [
-            "тело"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "крик",
-        "pos": "n",
-        "spheres": [
-            "тело"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "кричать",
-        "pos": "v",
-        "spheres": [
-            "тело"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "низкий",
-        "pos": "adj",
-        "spheres": [
-            "тело"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "процесс создания прически",
-        "pos": "n",
-        "spheres": [
-            "тело"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "слушание",
-        "pos": "n",
-        "spheres": [
-            "общество",
-            "политика"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "слух",
-        "pos": "n",
-        "spheres": [
-            "тело"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "слушать",
-        "pos": "v",
-        "spheres": [
-            "тело"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "слышать",
-        "pos": "v",
-        "spheres": [
-            "тело"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "ухо",
-        "pos": "n",
-        "spheres": [
-            "тело"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "прыгать",
-        "pos": "v",
-        "spheres": [
-            "тело",
-            "спорт"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "прыгун",
-        "pos": "n",
-        "spheres": [
-            "тело",
-            "спорт"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "прыжок",
-        "pos": "n",
-        "spheres": [
-            "тело",
-            "спорт"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "громкоговоритель (инструмент)",
-        "pos": "n",
-        "spheres": [
-            "технологии/работа"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "грузчик",
-        "pos": "n",
-        "spheres": [
-            "технологии/работа"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "дровосек",
-        "pos": "n",
-        "spheres": [
-            "технологии/работа"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "парикмахер",
-        "pos": "n",
-        "spheres": [
-            "технологии/работа"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "пила",
-        "pos": "n",
-        "spheres": [
-            "технологии/работа"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "пиление",
-        "pos": "n",
-        "spheres": [
-            "технологии/работа"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "пилить",
-        "pos": "v",
-        "spheres": [
-            "технологии/работа"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "плотник",
-        "pos": "n",
-        "spheres": [
-            "технологии/работа"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "пильщик",
-        "pos": "n",
-        "spheres": [
-            "технологии/работа"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "пылесос",
-        "pos": "n",
-        "spheres": [
-            "технологии/работа"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "строитель",
-        "pos": "n",
-        "spheres": [
-            "технологии/работа"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "стройка",
-        "pos": "n",
-        "spheres": [
-            "технологии/работа",
-            "архитектура"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "строящий",
-        "pos": "pr part",
-        "spheres": [
-            "технологии/работа",
-            "архитектура"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "строящийся",
-        "pos": "pr part",
-        "spheres": [
-            "технологии/работа",
-            "архитектура"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "пивоварение",
-        "pos": "n",
-        "spheres": [
-            "технологии/работа",
-            "еда"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "каштановый цвет",
-        "pos": "adj",
-        "spheres": [
-            "цвета"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "оранжевый",
-        "pos": "adj",
-        "spheres": [
-            "цвета"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "серый",
-        "pos": "adj",
-        "spheres": [
-            "цвета"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "фиолетовый",
-        "pos": "adj",
-        "spheres": [
-            "цвета"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "взятка",
-        "pos": "n",
-        "spheres": [
-            "экономика"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "товар",
-        "pos": "n",
-        "spheres": [
-            "экономика"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "магазин",
-        "pos": "n",
-        "spheres": [
-            "экономика"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "рынок",
-        "pos": "n",
-        "spheres": [
-            "экономика"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "покупатель",
-        "pos": "n",
-        "spheres": [
-            "экономика"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "покупать",
-        "pos": "v",
-        "spheres": [
-            "экономика"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "покупка",
-        "pos": "n",
-        "spheres": [
-            "экономика"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "продавать",
-        "pos": "v",
-        "spheres": [
-            "экономика"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "продавец",
-        "pos": "n",
-        "spheres": [
-            "экономика"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "продажа",
-        "pos": "n",
-        "spheres": [
-            "экономика"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "продать",
-        "pos": "v",
-        "spheres": [
-            "экономика"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "обнимать (ся)",
-        "pos": "v",
-        "spheres": [
-            "эмоции"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "обьятие",
-        "pos": "n",
-        "spheres": [
-            "эмоции"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "прошу",
-        "pos": "",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "пожалуйста",
-        "pos": "interj",
-        "spheres": [
-            "эмоции"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "принимающий",
-        "pos": "pr part",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "любящий",
-        "pos": "pr part",
-        "spheres": [
-            "эмоции"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "прощание",
-        "pos": "n",
-        "spheres": [
-            "эмоции"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "счастливчик",
-        "pos": "n",
-        "spheres": [
-            "эмоции"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "счастливый",
-        "pos": "adj",
-        "spheres": [
-            "эмоции"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "счастье",
-        "pos": "n",
-        "spheres": [
-            "эмоции"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "хотеть",
-        "pos": "v",
-        "spheres": [
-            "эмоции"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "друг",
-        "pos": "n",
-        "spheres": [
-            "эмоции",
-            "семья"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "любить",
-        "pos": "v",
-        "spheres": [
-            "эмоции",
-            "семья"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "любовь",
-        "pos": "n",
-        "spheres": [
-            "эмоции",
-            "семья"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "целовать(ся)",
-        "pos": "v",
-        "spheres": [
-            "эмоции",
-            "семья"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "заставлять писать",
-        "pos": "v",
-        "spheres": [
-            "язык"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "просить",
-        "pos": "v",
-        "spheres": [
-            "язык"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "просьба",
-        "pos": "n",
-        "spheres": [
-            "язык"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "спрашивание",
-        "pos": "n",
-        "spheres": [
-            "язык"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "книга",
-        "pos": "n",
-        "spheres": [
-            "язык",
-            "искусство"
-        ],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "без",
-        "pos": "prep",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "более",
-        "pos": "adj",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "брать",
-        "pos": "v",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "вдвоём",
-        "pos": "adv",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "вещание",
-        "pos": "n",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "взятый",
-        "pos": "adj",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "вместо",
-        "pos": "prep",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "внутри",
-        "pos": "adv",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "вот",
-        "pos": "interj",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "впятером",
-        "pos": "adv",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "втроем",
-        "pos": "adv",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "входить",
-        "pos": "v",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "вчетвером",
-        "pos": "adv",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "выходить",
-        "pos": "v",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "глашатай",
-        "pos": "n",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "давилка",
-        "pos": "n",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "давить",
-        "pos": "v",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "двигаться",
-        "pos": "v",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "добыча",
-        "pos": "n",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "должен",
-        "pos": "v",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "достигатель",
-        "pos": "n",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "если",
-        "pos": "conj",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "ждать",
-        "pos": "v",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "заколка для волос",
-        "pos": "n",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "звучать",
-        "pos": "v",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "здесь",
-        "pos": "adv",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "изменение",
-        "pos": "n",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "или ",
-        "pos": "conj",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "каждый",
-        "pos": "adj",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "короткий",
-        "pos": "adj",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "ладно",
-        "pos": "interj",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "лазание",
-        "pos": "n",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "лево",
-        "pos": "n",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "меньше",
-        "pos": "adj",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "мимо",
-        "pos": "adv",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "молчание",
-        "pos": "n",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "назад",
-        "pos": "adv",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "найти",
-        "pos": "v",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "настоящий",
-        "pos": "adj",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "ничто",
-        "pos": "n",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "ношение",
-        "pos": "n",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "о ",
-        "pos": "prep",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "обновлять",
-        "pos": "v",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "ожидание",
-        "pos": "n",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "оно",
-        "pos": "pron",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "останавливание",
-        "pos": "n",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "останавливать",
-        "pos": "v",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "останавливаться",
-        "pos": "v",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "перед",
-        "pos": "prep",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "по ",
-        "pos": "prep",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "повод для счастья",
-        "pos": "n",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "покрытие",
-        "pos": "n",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "потому\nпоэтому",
-        "pos": "pron",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "почему",
-        "pos": "pron",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "правильный\nровный",
-        "pos": "adj",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "приветствие",
-        "pos": "n",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
         "russian": "размножать",
         "pos": "v",
         "spheres": [],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "размножаться",
+        "pos": "v",
+        "spheres": [
+            "природа"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "размножение",
+        "pos": "n",
+        "spheres": [
+            "природа"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "разрушать",
+        "pos": "v",
+        "spheres": [
+            "военное"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "разрушающий",
+        "pos": "pr part",
+        "spheres": [
+            "военное"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "разрушение",
+        "pos": "n",
+        "spheres": [
+            "военное"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "разрушенный",
+        "pos": "adj",
+        "spheres": [
+            "военное"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -16672,9 +15720,132 @@
     },
     {
         "lirbantu": "",
-        "russian": "сам",
-        "pos": "pron",
-        "spheres": [],
+        "russian": "расселение",
+        "pos": "n",
+        "spheres": [
+            "общество"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "расследование",
+        "pos": "n",
+        "spheres": [
+            "общество",
+            "политика"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "ребенок",
+        "pos": "n",
+        "spheres": [
+            "семья"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "религия",
+        "pos": "n",
+        "spheres": [
+            "религия"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "родина",
+        "pos": "n",
+        "spheres": [
+            "общество",
+            "семья"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "родители",
+        "pos": "n",
+        "spheres": [
+            "семья"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "родитель",
+        "pos": "n",
+        "spheres": [
+            "семья"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "рынок",
+        "pos": "n",
+        "spheres": [
+            "экономика"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -16762,6 +15933,246 @@
     },
     {
         "lirbantu": "",
+        "russian": "сделка",
+        "pos": "n",
+        "spheres": [
+            "общество"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "сейчас",
+        "pos": "adv",
+        "spheres": [
+            "время"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "семья",
+        "pos": "n",
+        "spheres": [
+            "семья"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "семя",
+        "pos": "n",
+        "spheres": [
+            "природа"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "серый",
+        "pos": "adj",
+        "spheres": [
+            "цвета"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "сестра",
+        "pos": "n",
+        "spheres": [
+            "семья"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "сеять",
+        "pos": "v",
+        "spheres": [
+            "природа",
+            "технологии/работа"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "скачки",
+        "pos": "n",
+        "spheres": [
+            "спорт"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "сладкий",
+        "pos": "adj",
+        "spheres": [
+            "еда"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "слух",
+        "pos": "n",
+        "spheres": [
+            "тело"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "слушание",
+        "pos": "n",
+        "spheres": [
+            "общество",
+            "политика"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "слушать",
+        "pos": "v",
+        "spheres": [
+            "тело"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "слышать",
+        "pos": "v",
+        "spheres": [
+            "тело"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "смола",
+        "pos": "n",
+        "spheres": [
+            "природа"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
         "russian": "снотворное",
         "pos": "n",
         "spheres": [],
@@ -16777,9 +16188,45 @@
     },
     {
         "lirbantu": "",
+        "russian": "спальня",
+        "pos": "n",
+        "spheres": [
+            "архитектура",
+            "семья"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
         "russian": "становление",
         "pos": "n",
         "spheres": [],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "стих",
+        "pos": "n",
+        "spheres": [
+            "искусство",
+            "язык"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -16837,6 +16284,95 @@
     },
     {
         "lirbantu": "",
+        "russian": "строитель",
+        "pos": "n",
+        "spheres": [
+            "технологии/работа"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "строить",
+        "pos": "v",
+        "spheres": [
+            "архитектура",
+            "технологии/работа"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "стройка",
+        "pos": "n",
+        "spheres": [
+            "технологии/работа",
+            "архитектура"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "строящий",
+        "pos": "pr part",
+        "spheres": [
+            "технологии/работа",
+            "архитектура"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "строящийся",
+        "pos": "pr part",
+        "spheres": [
+            "технологии/работа",
+            "архитектура"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
         "russian": "стук",
         "pos": "n",
         "spheres": [],
@@ -16855,6 +16391,127 @@
         "russian": "стучать",
         "pos": "v",
         "spheres": [],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "суд (здание)",
+        "pos": "n",
+        "spheres": [
+            "архитектура",
+            "общество",
+            "политика"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "суеверие",
+        "pos": "n",
+        "spheres": [
+            "религия"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "сцена",
+        "pos": "n",
+        "spheres": [
+            "искусство"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "счастливчик",
+        "pos": "n",
+        "spheres": [
+            "эмоции"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "счастливый",
+        "pos": "adj",
+        "spheres": [
+            "эмоции"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "счастье",
+        "pos": "n",
+        "spheres": [
+            "эмоции"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "сын",
+        "pos": "n",
+        "spheres": [
+            "семья"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -16942,9 +16599,11 @@
     },
     {
         "lirbantu": "",
-        "russian": "те",
-        "pos": "pron",
-        "spheres": [],
+        "russian": "танец",
+        "pos": "n",
+        "spheres": [
+            "искусство"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -16957,9 +16616,62 @@
     },
     {
         "lirbantu": "",
-        "russian": "то ",
-        "pos": "pron",
-        "spheres": [],
+        "russian": "танцевать",
+        "pos": "v",
+        "spheres": [
+            "искусство"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "танцор",
+        "pos": "n",
+        "spheres": [
+            "искусство"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "танцпол",
+        "pos": "n",
+        "spheres": [
+            "искусство"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "товар",
+        "pos": "n",
+        "spheres": [
+            "экономика"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -17002,9 +16714,11 @@
     },
     {
         "lirbantu": "",
-        "russian": "увеличивать",
-        "pos": "v",
-        "spheres": [],
+        "russian": "ум",
+        "pos": "n",
+        "spheres": [
+            "наука"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -17035,6 +16749,92 @@
         "russian": "уменьшение",
         "pos": "n",
         "spheres": [],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "утро",
+        "pos": "n",
+        "spheres": [
+            "природа"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "ухо",
+        "pos": "n",
+        "spheres": [
+            "тело"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "фиолетовый",
+        "pos": "adj",
+        "spheres": [
+            "цвета"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "хотеть",
+        "pos": "v",
+        "spheres": [
+            "эмоции"
+        ],
+        "etymology": "",
+        "comment": "",
+        "root1": "",
+        "root2": "",
+        "logic": "",
+        "grammar": "",
+        "root1_emoji": "",
+        "root2_emoji": "",
+        "description": ""
+    },
+    {
+        "lirbantu": "",
+        "russian": "целовать(ся)",
+        "pos": "v",
+        "spheres": [
+            "эмоции",
+            "семья"
+        ],
         "etymology": "",
         "comment": "",
         "root1": "",
@@ -17079,21 +16879,6 @@
         "lirbantu": "",
         "russian": "через",
         "pos": "prep",
-        "spheres": [],
-        "etymology": "",
-        "comment": "",
-        "root1": "",
-        "root2": "",
-        "logic": "",
-        "grammar": "",
-        "root1_emoji": "",
-        "root2_emoji": "",
-        "description": ""
-    },
-    {
-        "lirbantu": "",
-        "russian": "шаг как мера длины",
-        "pos": "n",
         "spheres": [],
         "etymology": "",
         "comment": "",
