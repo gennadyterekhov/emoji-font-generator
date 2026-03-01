@@ -1,4 +1,4 @@
-from emoji_font_generator.io import read_json_file
+from emoji_font_generator.input.io import read_json_file, write_json_file
 from emoji_font_generator.project import get_project_dir
 
 
@@ -14,16 +14,30 @@ def get_config():
     return dct
 
 
+def get_raw_sheet():
+    root = get_project_dir()
+    path = f'{root}/input/raw/sheet.json'
+    dct = read_json_file(path)
+    return dct
+
+
 def get_system() -> list:
     root = get_project_dir()
     path = f'{root}/input/config/system.json'
     dct = read_json_file(path)
     return dct
 
+
 def get_dictionary() -> list[dict]:
     root = get_project_dir()
     path = f'{root}/input/config/dictionary.json'
     return read_json_file(path)
+
+
+def save_new_dictionary(data: list[dict]) -> None:
+    root = get_project_dir()
+    path = f'{root}/input/config/dictionary.json'
+    return write_json_file(path, data)
 
 
 def get_emojis_used_by_ai() -> list:
