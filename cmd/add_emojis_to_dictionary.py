@@ -66,31 +66,55 @@ def add_emojis_to_one_word(api_key: str, model_name: str, base_url: str, word: d
 
 def add_emojis_to_dictionary(api_key: str, model_name: str, base_url: str) -> None:
     dct = get_dictionary()
-    updated = []
     # words are not unique (can have several orthographic variants or meaning), we must control uniqueness at app level
-    used_words = set()
+    used_words = {}
+    # list of words with errors. we need this to skip useless llm requests
+    unused_words = {}
+
     pos_whitelist = ['num', 'prep', 'interj', 'pron', 'conj']
+
     for i, word in enumerate(dct):
-        if word['russian'] in used_words:
-            continue
-        if word['lirbantu'] in used_words:
-            continue
         if word['pos'] in pos_whitelist:
             continue
-        if word['root1']:
+
+        # check for already processed word first, so that we can populate used_words correctly when starting again
+        # note the absence of continue
+        if word['root1'] or word['root2']:
+            used_words[word['russian']] = word
+            used_words[word['lirbantu']] = word
+
+        if word['russian'] in used_words:
+            dct[i] = used_words[word['russian']]
+            # we save on every iteration so that we can abort the long-running process and then continue from where we left
+            save_new_dictionary(dct)
             continue
+
+        if word['lirbantu'] in used_words:
+            dct[i] = used_words[word['lirbantu']]
+            # we save on every iteration so that we can abort the long-running process and then continue from where we left
+            save_new_dictionary(dct)
+            continue
+
+        if word['russian'] in unused_words:
+            continue
+
+        if word['lirbantu'] in unused_words:
+            continue
+
         print(f'processing word {word['lirbantu']} {i}/{len(dct)}')
 
         # let the llm rest a little
         time.sleep(1)
         tmp = add_emojis_to_one_word(api_key, model_name, base_url, word)
         if tmp:
-            # updated.append(tmp)
             dct[i] = tmp
             # we save on every iteration so that we can abort the long-running process and then continue from where we left
             save_new_dictionary(dct)
-        used_words.add(word['russian'])
-        used_words.add(word['lirbantu'])
+            used_words[word['russian']] = tmp
+            used_words[word['lirbantu']] = tmp
+        else:
+            unused_words[word['russian']] = word
+            unused_words[word['lirbantu']] = word
     save_new_dictionary(dct)
 
 
