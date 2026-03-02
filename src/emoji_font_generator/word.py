@@ -1,16 +1,16 @@
 import json
-from dataclasses import fields, asdict
+from dataclasses import fields, asdict, dataclass, field
 
 from pydantic import Field
 from pydantic.dataclasses import dataclass as pydantic_dataclass
 
 
-@pydantic_dataclass
+@dataclass
 class Word:
     conlang: str = ''
     natural: str = ''
     pos: str = ''
-    spheres: list[str] = Field(default_factory=list)
+    spheres: list[str] = field(default_factory=list)
     etymology: str = ''
     comment: str = ''
     root1: str = ''
@@ -31,7 +31,7 @@ class Word:
         return default
 
     def to_json(self):
-        d={**asdict(self)}
+        d = {**asdict(self)}
         return json.dumps(d)
 
     def __str__(self):
