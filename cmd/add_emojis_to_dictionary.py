@@ -47,7 +47,7 @@ def add_emojis_to_dictionary(llm_config: LlmConfig) -> None:
         if conlang_word in unused_words:
             continue
 
-        print(f'processing word {conlang_word}={natural_word} {i}/{len(dct)}')
+        print(f'processing word {i}/{len(dct)} {conlang_word}={natural_word}')
 
         # let the llm rest a little
         time.sleep(5)
