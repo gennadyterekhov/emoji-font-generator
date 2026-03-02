@@ -212,8 +212,8 @@ def get_ligatures_map() -> dict[str, str]:
     rootdir = get_project_dir()
     dct = get_dictionary()
     ligatures_map = {}
-    for wf_info in dct:
-        clean_word = wf_info['conlang']
+    for word in dct:
+        clean_word = word.conlang
         clean_word = sanitize_ligature(clean_word)
-        ligatures_map[clean_word] = f'{rootdir}/emojis/combined/{wf_info["natural"]}.svg'
+        ligatures_map[clean_word] = f'{rootdir}/emojis/combined/{word.natural}.svg'
     return ligatures_map

@@ -1,7 +1,7 @@
-import dataclasses
+from dataclasses import dataclass, fields
 
 
-@dataclasses.dataclass
+@dataclass
 class Word:
     conlang: str
     natural: str
@@ -19,3 +19,22 @@ class Word:
 
     def get_id(self):
         return f'{self.conlang}_{self.natural}_{self.pos}'
+
+    def get(self, name, default=None):
+        val = Word.get_field_by_name(self, name)
+        if val:
+            return val
+        return default
+
+    def __get__(self, name, default=None):
+        val = Word.get_field_by_name(self, name)
+        if val:
+            return val
+        return default
+
+    @staticmethod
+    def get_field_by_name(cls, field_name):
+        for field in fields(cls):
+            if field.name == field_name:
+                return field
+        return None

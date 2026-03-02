@@ -14,9 +14,9 @@ def main():
     prefix = f'{root}/emojis/combined'
     failures = 0
     for i, w in enumerate(words):
-        natural_word = w["natural"]
+        natural_word = w.natural
         try:
-            print(f'processing {w["conlang"]}={natural_word}, {i}/{len(words)}')
+            print(f'processing {w.conlang}={natural_word}, {i}/{len(words)}')
             if Path(f'{prefix}/{natural_word}.svg').exists():
                 continue
             combine_wordform(w)

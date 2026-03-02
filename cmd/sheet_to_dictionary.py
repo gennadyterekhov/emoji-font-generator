@@ -1,7 +1,8 @@
 from emoji_font_generator.input.config import get_raw_sheet, save_new_dictionary
+from emoji_font_generator.word import Word
 
 
-def sheet_to_dictionary(sheet: list[list]) -> list[dict]:
+def sheet_to_dictionary(sheet: list[list]) -> list[Word]:
     columns = [
         "phaaga",
         "translations",
@@ -42,7 +43,7 @@ def sheet_to_dictionary(sheet: list[list]) -> list[dict]:
             "root2_emoji": "",
             "description": "",
         }
-        dictionary.append(tmp)
+        dictionary.append(Word(**tmp))
     return dictionary
 
 

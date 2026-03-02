@@ -6,6 +6,7 @@ import requests
 from emoji_font_generator.input.config import LlmConfig
 from emoji_font_generator.input.io import read_md_file
 from emoji_font_generator.project import get_project_dir
+from emoji_font_generator.word import Word
 
 
 def ask_ai(llm_config: LlmConfig, prompt: str) -> str | dict:
@@ -44,9 +45,9 @@ def get_prompt_for_one_word(input_data: dict) -> str:
     return raw_prompt.replace('{{{input_data}}}', json.dumps(input_data))
 
 
-def add_emojis_to_one_word(llm_config: LlmConfig, word: dict) -> Optional[dict] | bool:
+def add_emojis_to_one_word(llm_config: LlmConfig, word: Word) -> Optional[Word] | bool:
     data_for_prompt = {
-        "word": word['natural'],
+        "word": word.natural,
         "logic": [
             "and",
             "or",
@@ -85,18 +86,18 @@ def add_emojis_to_one_word(llm_config: LlmConfig, word: dict) -> Optional[dict] 
             return None
 
         if 'error' in structured_response:
-            print(f'  error classifying word {word['conlang']}={word['natural']}, error: {structured_response["error"]}')
+            print(f'  error classifying word {word.conlang}={word.natural}, error: {structured_response["error"]}')
             return None
-        word['root1'] = structured_response.get('root1', '')
-        word['root2'] = structured_response.get('root2', '')
-        word['logic'] = structured_response.get('logic', '')
-        word['grammar'] = structured_response.get('grammar', '')
-        word['root1_emoji'] = structured_response.get('root1_emoji', '')
-        word['root2_emoji'] = structured_response.get('root2_emoji', '')
-        word['description'] = structured_response.get('description', '')
+        word.root1 = structured_response.get('root1', '')
+        word.root2 = structured_response.get('root2', '')
+        word.logic = structured_response.get('logic', '')
+        word.grammar = structured_response.get('grammar', '')
+        word.root1_emoji = structured_response.get('root1_emoji', '')
+        word.root2_emoji = structured_response.get('root2_emoji', '')
+        word.description = structured_response.get('description', '')
 
     except Exception as e:
-        print(f'  could not decode ai response for word {word['conlang']}={word['natural']}')
+        print(f'  could not decode ai response for word {word.conlang}={word.natural}')
         print(f'  error: {e}')
         print(f'  ai_response: {ai_response}')
         return None

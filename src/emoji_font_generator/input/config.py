@@ -4,6 +4,8 @@ from emoji_font_generator.input.io import read_json_file, write_json_file
 from emoji_font_generator.project import get_project_dir
 import os
 
+from emoji_font_generator.word import Word
+
 
 @dataclasses.dataclass
 class LlmConfig:
@@ -44,45 +46,40 @@ def get_raw_sheet():
     return dct
 
 
-def get_system() -> list:
-    root = get_project_dir()
-    path = f'{root}/input/config/system.json'
-    dct = read_json_file(path)
-    return dct
-
-
-def get_dictionary() -> list[dict]:
+def get_dictionary() -> list[Word]:
     root = get_project_dir()
     path = f'{root}/input/config/dictionary.json'
-    return read_json_file(path)
+    raw_json_list = read_json_file(path)
+    return [Word(**raw_json_dict) for raw_json_dict in raw_json_list]
 
 
-def save_new_dictionary(data: list[dict]) -> None:
+def save_new_dictionary(data: list[Word]) -> None:
     root = get_project_dir()
     path = f'{root}/input/config/dictionary.json'
-    return write_json_file(path, data)
+    write_json_file(path, data)
+    # send_updated_dictionary_to_google_sheets(data)
 
 
-def get_emojis_used_by_ai() -> list:
+def send_updated_dictionary_to_google_sheets(data: list[Word]) -> None:
+    """ google sheets is the single source of truth in the app, so I need to do this"""
+    # TODO impl
+    pass
+
+
+def get_emojis_used_by_ai() -> list[str]:
     words = get_dictionary()
-    emojis = [w['root1_emoji'] for w in words]
-    emojis2 = [w['root2_emoji'] for w in words]
+    emojis = [w.root1_emoji for w in words]
+    emojis2 = [w.root2_emoji for w in words]
     emojis.extend(emojis2)
     emojis = list(set(emojis))
     return emojis
 
 
-def get_wordform_from_ai_dictionary(wordform: str) -> dict | None:
+def get_wordforms_from_dictionary(wordform: str) -> list[Word]:
+    """ we cannot return only one wordform because both conlang words and natural words are not unique"""
     words = get_dictionary()
+    res = []
     for w in words:
-        if w['wordform'] == wordform:
-            return w
-    return None
-
-
-def get_wordform_index_from_ai_dictionary(wordform: str) -> int | None:
-    words = get_dictionary()
-    for i, w in enumerate(words):
-        if w['wordform'] == wordform:
-            return i
-    return None
+        if w.conlang == wordform or w.natural == wordform:
+            res.append(w)
+    return res

@@ -19,17 +19,17 @@ def add_emojis_to_dictionary(llm_config: LlmConfig) -> None:
     sphere_whitelisted = 'грамматика'
 
     for i, word in enumerate(dct):
-        conlang_word = word['conlang']
-        natural_word = word['natural']
+        conlang_word = word.conlang
+        natural_word = word.natural
 
         if word['pos'] in pos_whitelist:
             continue
-        if sphere_whitelisted in word['spheres']:
+        if sphere_whitelisted in word.spheres:
             continue
 
         # check for already processed word first, so that we can populate used_words correctly when starting again
         # note the absence of continue
-        if word['root1'] or word['root2']:
+        if word.root1 or word.root2:
             used_words[natural_word] = word
             used_words[conlang_word] = word
 

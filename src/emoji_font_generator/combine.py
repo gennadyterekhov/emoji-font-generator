@@ -1,28 +1,31 @@
 import xml.etree.ElementTree as ET
 
-from emoji_font_generator.helpers import get_emoji_svg_path_or_throw, get_logic_svg_path_or_throw, get_grammar_svg_path_or_throw
+from emoji_font_generator.helpers import get_emoji_svg_path_or_throw, get_logic_svg_path_or_throw, \
+    get_grammar_svg_path_or_throw
 from emoji_font_generator.project import get_project_dir
 import os
 
+from emoji_font_generator.word import Word
 
-def combine_wordform(wordform: dict):
-    logic = wordform.get("logic", 'genitive')
-    grammar = wordform.get("grammar", 'noun')
-    description = wordform.get('description', '')
+
+def combine_wordform(word: Word):
+    logic = word.get("logic", 'genitive')
+    grammar = word.get("grammar", 'noun')
+    description = word.get('description', '')
 
     if logic == 'genitive' and grammar == 'noun':
-        return combine2(wordform['wordform'], [wordform['root1_emoji'], wordform['root2_emoji'], ], description)
+        return combine2(word.conlang, [word.root1_emoji, word.root2_emoji, ], description)
 
     if logic == 'accusative' and grammar == 'infinitive':
-        return combine3(wordform['wordform'], [wordform['root1_emoji'], wordform['root2_emoji'], logic], description)
+        return combine3(word.conlang, [word.root1_emoji, word.root2_emoji, logic], description)
 
     return combine4(
-        wordform['wordform'],
+        word.conlang,
         [
-            wordform['root1_emoji'],
-            wordform['root2_emoji'],
-            wordform['logic'],
-            wordform['grammar'],
+            word.root1_emoji,
+            word.root2_emoji,
+            logic,
+            grammar,
         ],
         description,
     )
@@ -58,7 +61,6 @@ def combine4(wordform: str, emojis: list[str], description=''):
     save_as_file(root, wordform)
 
 
-
 def combine3(wordform: str, emojis: list[str], description=''):
     if len(emojis) != 3:
         raise ValueError('Emojis must have exactly 3 characters')
@@ -87,7 +89,6 @@ def combine3(wordform: str, emojis: list[str], description=''):
                 element.set('transform', f'{translate}')
             root.append(element)
     save_as_file(root, wordform)
-
 
 
 def combine2(wordform: str, emojis: list[str], description=''):
