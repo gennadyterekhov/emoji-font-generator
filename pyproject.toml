@@ -6,8 +6,10 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "brotli>=1.2.0",
+    "dataclasses-json>=0.6.7",
     "fonttools>=4.61.1",
     "picosvg>=0.22.3",
+    "pydantic>=2.12.5",
     "pytest>=9.0.2",
     "python-dotenv>=1.2.2",
     "requests>=2.32.5",

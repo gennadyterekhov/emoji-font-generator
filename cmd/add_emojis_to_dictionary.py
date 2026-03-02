@@ -22,7 +22,7 @@ def add_emojis_to_dictionary(llm_config: LlmConfig) -> None:
         conlang_word = word.conlang
         natural_word = word.natural
 
-        if word['pos'] in pos_whitelist:
+        if word.pos in pos_whitelist:
             continue
         if sphere_whitelisted in word.spheres:
             continue
