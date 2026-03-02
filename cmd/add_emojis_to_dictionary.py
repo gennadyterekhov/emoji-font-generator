@@ -1,4 +1,3 @@
-import os
 import time
 
 from dotenv import load_dotenv
@@ -9,6 +8,7 @@ from emoji_font_generator.llm.llm import add_emojis_to_one_word
 
 def add_emojis_to_dictionary(llm_config: LlmConfig) -> None:
     dct = get_dictionary()
+
     # words are not unique (can have several orthographic variants or meaning), we must control uniqueness at app level
     used_words = {}
     # list of words with errors. we need this to skip useless llm requests
