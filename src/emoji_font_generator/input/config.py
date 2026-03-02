@@ -2,7 +2,7 @@ from emoji_font_generator.input.io import read_json_file, write_json_file
 from emoji_font_generator.project import get_project_dir
 
 
-def get_lirbantu_font_filename():
+def get_conlang_font_filename():
     root = get_project_dir()
     return f'{root}/input/fonts/input_font.ttf'
 

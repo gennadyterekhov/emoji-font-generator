@@ -47,7 +47,7 @@ def add_emojis_to_one_word(api_key: str, model_name: str, base_url: str, word: d
             return None
 
         if 'error' in structured_response:
-            print(f'error classifying word {word['lirbantu']}={word['russian']}, error: {structured_response["error"]}')
+            print(f'error classifying word {word['conlang']}={word['natural']}, error: {structured_response["error"]}')
             return None
         word['root1'] = structured_response.get('root1', '')
         word['root2'] = structured_response.get('root2', '')
@@ -58,7 +58,7 @@ def add_emojis_to_one_word(api_key: str, model_name: str, base_url: str, word: d
         word['description'] = structured_response.get('description', '')
 
     except Exception as e:
-        print(f'could not decode ai response for word {word['lirbantu']}={word['russian']}, error: {e}')
+        print(f'could not decode ai response for word {word['conlang']}={word['natural']}, error: {e}')
         return None
 
     return word

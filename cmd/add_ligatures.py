@@ -9,7 +9,7 @@ from fontTools.pens.ttGlyphPen import TTGlyphPen
 from fontTools.svgLib import SVGPath
 from fontTools.ttLib import TTFont
 
-from emoji_font_generator.config.config import get_dictionary, get_lirbantu_font_filename
+from emoji_font_generator.input.config import get_conlang_font_filename, get_dictionary
 from emoji_font_generator.project import get_project_dir
 
 
@@ -159,7 +159,6 @@ feature liga {
         os.unlink(feature_file)
 
 
-
 def add_svg_ligatures_to_font(input_font_path, ligature_dict, output_font_path):
     """
     Add SVG ligature glyphs to a font and create ligature substitutions
@@ -171,7 +170,7 @@ def add_svg_ligatures_to_font(input_font_path, ligature_dict, output_font_path):
     """
     # Load the font
     font = TTFont(input_font_path)
-    #font.setFontRevision('Nu Lirbantu With Emoji hieroglyphs in ligatures')
+    # font.setFontRevision('Nu Lirbantu With Emoji hieroglyphs in ligatures')
 
     # Get font metrics
     upm = font['head'].unitsPerEm
@@ -206,7 +205,7 @@ def add_svg_ligatures_to_font(input_font_path, ligature_dict, output_font_path):
             upm,
             ascender,
             descender,
-            #is_ttf=True  # Set to False for CFF fonts
+            # is_ttf=True  # Set to False for CFF fonts
         )
 
         # Add glyph to font
@@ -223,7 +222,8 @@ def add_svg_ligatures_to_font(input_font_path, ligature_dict, output_font_path):
     font.save(output_font_path)
     print(f"Font saved to {output_font_path}")
 
-def svg_to_glyph(font,svg_path, upm, ascender, descender, is_ttf=True):
+
+def svg_to_glyph(font, svg_path, upm, ascender, descender, is_ttf=True):
     """
     Convert SVG file to glyph outline using fontTools.svgLib.SVGPath [citation:3][citation:6]
     """
@@ -276,7 +276,9 @@ def svg_to_glyph(font,svg_path, upm, ascender, descender, is_ttf=True):
         advance_width = int(width * scale)
 
     return glyph, advance_width
-def svg_to_glyph_with_picosvg(font,svg_path, upm, ascender, descender):
+
+
+def svg_to_glyph_with_picosvg(font, svg_path, upm, ascender, descender):
     """
     Convert SVG to glyph using picosvg for better path handling
     """
@@ -314,6 +316,8 @@ def svg_to_glyph_with_picosvg(font,svg_path, upm, ascender, descender):
     advance_width = int(width * scale)
 
     return glyph, advance_width
+
+
 def add_glyph_to_font(font, glyph_name, glyph, advance_width):
     """
     Add a new glyph to the font [citation:7]
@@ -335,6 +339,7 @@ def add_glyph_to_font(font, glyph_name, glyph, advance_width):
 
     # Add to horizontal metrics
     font['hmtx'][glyph_name] = (advance_width, lsb)
+
 
 def add_ligature_substitutions_old(font, ligature_rules):
     """
@@ -375,6 +380,7 @@ feature liga {
         print(feature_content)
     finally:
         os.unlink(feature_file)
+
 
 def add_ligature_substitutions(font, ligature_rules):
     """
@@ -428,25 +434,22 @@ feature liga {
     finally:
         os.unlink(feature_file)
 
+
 def get_ligatures_map():
     rootdir = get_project_dir()
     dct = get_dictionary()
     liga = {}
     for wf_info in dct:
-        liga[wf_info["lirbantu"]] = f'{rootdir}/emojis/combined/{wf_info["wordform"]}.svg'
+        liga[wf_info["conlang"]] = f'{rootdir}/emojis/combined/{wf_info["wordform"]}.svg'
     return liga
 
 
-# Usage
-ligatures = {
-    "fi": "path/to/fi.svg",
-    "fl": "path/to/fl.svg",
-    "ffi": "path/to/ffi.svg",
-    # ... 383 more ligatures
-}
+def main():
+    rootdir = get_project_dir()
+    ligatures = get_ligatures_map()
+    output_filename = f'{rootdir}/output/nu_lirbantu_w_ligatures.ttf'
+    add_svg_ligatures_to_font(get_conlang_font_filename(), ligatures, output_filename)
 
-rootdir = get_project_dir()
 
-ligatures = get_ligatures_map()
-output_filename = f'{rootdir}/output/nu_lirbantu_w_ligatures.ttf'
-add_svg_ligatures_to_font(get_lirbantu_font_filename(), ligatures, output_filename)
+if __name__ == '__main__':
+    main()
