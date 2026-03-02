@@ -27,11 +27,15 @@ def add_emojis_to_dictionary(llm_config: LlmConfig) -> None:
         if sphere_whitelisted in word.spheres:
             continue
 
+        if natural_word in unused_words or conlang_word in unused_words:
+            continue
+
         # check for already processed word first, so that we can populate used_words correctly when starting again
-        # note the absence of continue
+        # we can continue because the current word has already been processed, we will check alt variants next
         if word.root1 or word.root2:
             used_words[natural_word] = word
             used_words[conlang_word] = word
+            continue
 
         if natural_word in used_words:
             dct[i] = used_words[natural_word]
@@ -43,12 +47,6 @@ def add_emojis_to_dictionary(llm_config: LlmConfig) -> None:
             dct[i] = used_words[conlang_word]
             # we save on every iteration so that we can abort the long-running process and then continue from where we left
             save_new_dictionary(dct)
-            continue
-
-        if natural_word in unused_words:
-            continue
-
-        if conlang_word in unused_words:
             continue
 
         print(f'processing word {i}/{len(dct)} {conlang_word}={natural_word}')
