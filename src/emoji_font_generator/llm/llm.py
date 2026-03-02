@@ -29,7 +29,6 @@ def ask_ai(llm_config: LlmConfig, prompt: str) -> str | dict:
 
     # Extract the assistant message with reasoning_details
     response = response.json()
-    print('response',response)
     if 'choices' in response:
         if len(response['choices']) > 0:
             if 'message' in response['choices'][0]:
