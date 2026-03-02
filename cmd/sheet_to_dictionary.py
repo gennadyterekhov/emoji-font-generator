@@ -27,8 +27,8 @@ def sheet_to_dictionary(sheet: list[list]) -> list[dict]:
         etymology = row[4]
         comment = row[5]
         tmp = {
-            "lirbantu": lirbantu,
-            "russian": russian,
+            "conlang": lirbantu,
+            "natural": russian,
             "pos": pos,
             "spheres": spheres,
             "etymology": etymology,

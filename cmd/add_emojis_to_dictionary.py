@@ -11,7 +11,7 @@ from emoji_font_generator.llm.llm import ask_ai, get_prompt_for_one_word
 
 def add_emojis_to_one_word(api_key: str, model_name: str, base_url: str, word: dict) -> Optional[dict]:
     data_for_prompt = {
-        "word": word['russian'],
+        "word": word['natural'],
         "logic": [
             "and",
             "or",
@@ -74,8 +74,8 @@ def add_emojis_to_dictionary(api_key: str, model_name: str, base_url: str) -> No
     pos_whitelist = ['num', 'prep', 'interj', 'pron', 'conj']
 
     for i, word in enumerate(dct):
-        conlang_word = word['lirbantu']
-        natural_word = word['russian']
+        conlang_word = word['conlang']
+        natural_word = word['natural']
 
         if word['pos'] in pos_whitelist:
             continue
