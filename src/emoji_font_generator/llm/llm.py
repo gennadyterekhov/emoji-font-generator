@@ -79,11 +79,11 @@ def add_emojis_to_one_word(llm_config: LlmConfig, word: dict) -> Optional[dict]:
             structured_response = structured_response.replace('```', '')
             structured_response = json.loads(structured_response)
         else:
-            print('unexpected response', ai_response)
+            print('  unexpected response', ai_response)
             return None
 
         if 'error' in structured_response:
-            print(f'error classifying word {word['conlang']}={word['natural']}, error: {structured_response["error"]}')
+            print(f'  error classifying word {word['conlang']}={word['natural']}, error: {structured_response["error"]}')
             return None
         word['root1'] = structured_response.get('root1', '')
         word['root2'] = structured_response.get('root2', '')
@@ -94,9 +94,9 @@ def add_emojis_to_one_word(llm_config: LlmConfig, word: dict) -> Optional[dict]:
         word['description'] = structured_response.get('description', '')
 
     except Exception as e:
-        print(f'could not decode ai response for word {word['conlang']}={word['natural']}')
-        print(f'error: {e}')
-        print(f'ai_response: {ai_response}')
+        print(f'  could not decode ai response for word {word['conlang']}={word['natural']}')
+        print(f'  error: {e}')
+        print(f'  ai_response: {ai_response}')
         return None
 
     return word
