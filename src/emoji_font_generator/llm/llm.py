@@ -3,26 +3,27 @@ from typing import Optional
 
 import requests
 
+from emoji_font_generator.input.config import LlmConfig
 from emoji_font_generator.input.io import read_md_file
 from emoji_font_generator.project import get_project_dir
 
 
-def ask_ai(api_key: str, model_name: str, base_url: str, prompt: str) -> str | dict:
+def ask_ai(llm_config: LlmConfig, prompt: str) -> str | dict:
     response = requests.post(
-        url=base_url,
+        url=llm_config.base_url,
         headers={
-            "Authorization": f"Bearer {api_key}",
+            "Authorization": f"Bearer {llm_config.api_key}",
             "Content-Type": "application/json",
         },
         data=json.dumps({
-            "model": model_name,
+            "model": llm_config.model_name,
             "messages": [
                 {
                     "role": "user",
                     "content": prompt,  # "How many r's are in the word 'strawberry'?"
                 }
             ],
-            "reasoning": {"enabled": True}
+            "reasoning": {"enabled": llm_config.use_reasoning}
         })
     )
 
@@ -40,7 +41,7 @@ def get_prompt_for_one_word(input_data: dict) -> str:
     return raw_prompt.replace('{{{input_data}}}', json.dumps(input_data))
 
 
-def add_emojis_to_one_word(api_key: str, model_name: str, base_url: str, word: dict) -> Optional[dict]:
+def add_emojis_to_one_word(llm_config: LlmConfig, word: dict) -> Optional[dict]:
     data_for_prompt = {
         "word": word['natural'],
         "logic": [
@@ -68,7 +69,7 @@ def add_emojis_to_one_word(api_key: str, model_name: str, base_url: str, word: d
     prompt = get_prompt_for_one_word(data_for_prompt)
     ai_response = ''
     try:
-        ai_response = ask_ai(api_key, model_name, base_url, prompt)
+        ai_response = ask_ai(llm_config, prompt)
         if 'content' in ai_response:
             md_json = ai_response['content']
             structured_response = md_json.replace('```json', '')

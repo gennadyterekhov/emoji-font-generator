@@ -3,11 +3,11 @@ import time
 
 from dotenv import load_dotenv
 
-from emoji_font_generator.input.config import get_dictionary, save_new_dictionary
+from emoji_font_generator.input.config import get_dictionary, save_new_dictionary, get_llm_config_from_env, LlmConfig
 from emoji_font_generator.llm.llm import add_emojis_to_one_word
 
 
-def add_emojis_to_dictionary(api_key: str, model_name: str, base_url: str) -> None:
+def add_emojis_to_dictionary(llm_config: LlmConfig) -> None:
     dct = get_dictionary()
     # words are not unique (can have several orthographic variants or meaning), we must control uniqueness at app level
     used_words = {}
@@ -51,7 +51,7 @@ def add_emojis_to_dictionary(api_key: str, model_name: str, base_url: str) -> No
 
         # let the llm rest a little
         time.sleep(1)
-        tmp = add_emojis_to_one_word(api_key, model_name, base_url, word)
+        tmp = add_emojis_to_one_word(llm_config, word)
         if tmp:
             dct[i] = tmp
             # we save on every iteration so that we can abort the long-running process and then continue from where we left
@@ -67,10 +67,8 @@ def add_emojis_to_dictionary(api_key: str, model_name: str, base_url: str) -> No
 def main():
     load_dotenv()
     try:
-        api_key = os.getenv('LLM_API_KEY')
-        model_name = os.getenv('LLM_MODEL_NAME')
-        base_url = os.getenv('LLM_URL')
-        add_emojis_to_dictionary(api_key, model_name, base_url)
+        llm_config = get_llm_config_from_env()
+        add_emojis_to_dictionary(llm_config)
     except KeyboardInterrupt:
         print('exiting')
 
