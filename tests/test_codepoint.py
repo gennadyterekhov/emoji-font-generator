@@ -2,7 +2,7 @@ from emoji_font_generator.helpers import get_twemoji_codepoint
 
 
 class TestCodepoint:
-    def test_codepoint():
+    def test_codepoint(self):
         cdp = get_twemoji_codepoint('😊')
         assert (cdp == '1f60a')
 
