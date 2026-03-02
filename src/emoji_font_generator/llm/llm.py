@@ -44,7 +44,7 @@ def get_prompt_for_one_word(input_data: dict) -> str:
     return raw_prompt.replace('{{{input_data}}}', json.dumps(input_data))
 
 
-def add_emojis_to_one_word(llm_config: LlmConfig, word: dict) -> Optional[dict]:
+def add_emojis_to_one_word(llm_config: LlmConfig, word: dict) -> Optional[dict] | bool:
     data_for_prompt = {
         "word": word['natural'],
         "logic": [
@@ -80,6 +80,8 @@ def add_emojis_to_one_word(llm_config: LlmConfig, word: dict) -> Optional[dict]:
             structured_response = json.loads(structured_response)
         else:
             print('  unexpected response', ai_response)
+            if 'error' in ai_response and 'code' in ai_response['error'] and ai_response['error']['code'] == 429:
+                return False
             return None
 
         if 'error' in structured_response:

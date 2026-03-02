@@ -430,7 +430,8 @@
                 "natural": "быть",
                 "pos": "v",
                 "spheres": [
-                        "простые действия"
+                        "простые действия",
+                        "грамматика"
                 ],
                 "etymology": "",
                 "comment": "",
@@ -2065,13 +2066,13 @@
                 ],
                 "etymology": "",
                 "comment": "",
-                "root1": "",
-                "root2": "",
-                "logic": "",
-                "grammar": "",
-                "root1_emoji": "",
-                "root2_emoji": "",
-                "description": ""
+                "root1": "помощь",
+                "root2": "делать",
+                "logic": "genitive",
+                "grammar": "v",
+                "root1_emoji": "🤝",
+                "root2_emoji": "🛠️",
+                "description": "делание помощи"
         },
         {
                 "conlang": "cidan",
@@ -4751,7 +4752,8 @@
                 "natural": "иметь",
                 "pos": "v",
                 "spheres": [
-                        "простые действия"
+                        "простые действия",
+                        "грамматика"
                 ],
                 "etymology": "",
                 "comment": "",

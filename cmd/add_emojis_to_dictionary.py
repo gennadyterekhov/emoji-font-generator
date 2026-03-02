@@ -15,12 +15,16 @@ def add_emojis_to_dictionary(llm_config: LlmConfig) -> None:
     unused_words = {}
 
     pos_whitelist = ['num', 'prep', 'interj', 'pron', 'conj']
+    spheres_whitelist = ['грамматика']
+    sphere_whitelisted = 'грамматика'
 
     for i, word in enumerate(dct):
         conlang_word = word['conlang']
         natural_word = word['natural']
 
         if word['pos'] in pos_whitelist:
+            continue
+        if sphere_whitelisted in word['spheres']:
             continue
 
         # check for already processed word first, so that we can populate used_words correctly when starting again
@@ -50,8 +54,12 @@ def add_emojis_to_dictionary(llm_config: LlmConfig) -> None:
         print(f'processing word {i}/{len(dct)} {conlang_word}={natural_word}')
 
         # let the llm rest a little
-        time.sleep(5)
+        print('  waiting 11s')
+        time.sleep(11)
         tmp = add_emojis_to_one_word(llm_config, word)
+        if tmp == False:
+            print('  got 429. need to slow down')
+            return
         if tmp:
             dct[i] = tmp
             # we save on every iteration so that we can abort the long-running process and then continue from where we left
