@@ -50,7 +50,7 @@ def add_emojis_to_dictionary(llm_config: LlmConfig) -> None:
         print(f'processing word {conlang_word}={natural_word} {i}/{len(dct)}')
 
         # let the llm rest a little
-        time.sleep(1)
+        time.sleep(5)
         tmp = add_emojis_to_one_word(llm_config, word)
         if tmp:
             dct[i] = tmp
