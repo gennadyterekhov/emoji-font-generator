@@ -52,8 +52,9 @@ def add_emojis_to_dictionary(llm_config: LlmConfig) -> None:
         print(f'processing word {i}/{len(dct)} {conlang_word}={natural_word}')
 
         # let the llm rest a little
-        print('  waiting 11s')
-        time.sleep(11)
+        # 20 requests and it's too much for 11s. will try 20
+        print('  waiting 20s')
+        time.sleep(20)
         tmp = add_emojis_to_one_word(llm_config, word)
         if tmp == False:
             print('  got 429. need to slow down')
