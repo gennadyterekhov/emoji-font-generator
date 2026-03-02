@@ -56,7 +56,7 @@ def get_dictionary() -> list[Word]:
 def save_new_dictionary(data: list[Word]) -> None:
     root = get_project_dir()
     path = f'{root}/input/config/dictionary.json'
-    data=[w.to_json() for w in data]
+    data = [w.to_dict() for w in data]
     write_json_file(path, data)
     # send_updated_dictionary_to_google_sheets(data)
 

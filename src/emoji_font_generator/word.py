@@ -30,9 +30,11 @@ class Word:
             return val
         return default
 
-    def to_json(self):
-        d = {**asdict(self)}
-        return json.dumps(d)
+    def to_json(self) -> str:
+        return json.dumps(self.to_dict(), indent=8, ensure_ascii=False)
+
+    def to_dict(self) -> dict:
+        return asdict(self)
 
     def __str__(self):
         return self.get_id()
