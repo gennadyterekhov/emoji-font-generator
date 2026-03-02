@@ -123,10 +123,13 @@ def add_emojis_to_dictionary(api_key: str, model_name: str, base_url: str) -> No
 
 def main():
     load_dotenv()
-    api_key = os.getenv('LLM_API_KEY')
-    model_name = os.getenv('LLM_MODEL_NAME')
-    base_url = os.getenv('LLM_URL')
-    add_emojis_to_dictionary(api_key, model_name, base_url)
+    try:
+        api_key = os.getenv('LLM_API_KEY')
+        model_name = os.getenv('LLM_MODEL_NAME')
+        base_url = os.getenv('LLM_URL')
+        add_emojis_to_dictionary(api_key, model_name, base_url)
+    except KeyboardInterrupt:
+        print('exiting')
 
 
 if __name__ == "__main__":
