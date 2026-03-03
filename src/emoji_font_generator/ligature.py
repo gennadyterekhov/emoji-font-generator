@@ -1,15 +1,11 @@
-import os
-import subprocess
-import tempfile
 from pathlib import Path
 
 from fontTools.misc.transform import Scale
-from fontTools.pens.transformPen import TransformPen
 from fontTools.pens.ttGlyphPen import TTGlyphPen
 from fontTools.svgLib import SVGPath
 from fontTools.ttLib import TTFont
 
-from emoji_font_generator.input.config import get_conlang_font_filename, get_dictionary
+from emoji_font_generator.input.config import get_dictionary
 from emoji_font_generator.project import get_project_dir
 
 
@@ -78,7 +74,6 @@ def svg_to_glyph_with_picosvg(font: TTFont, svg_path: str | Path, upm, ascender,
     Convert SVG to glyph using picosvg for better path handling
     """
     from picosvg.svg import SVG as picoSVG
-    from fontTools.pens.t2CharStringPen import T2CharStringPen
     from fontTools.pens.transformPen import TransformPen
 
     # Read and normalize SVG
@@ -215,5 +210,5 @@ def get_ligatures_map() -> dict[str, str]:
     for word in dct:
         clean_word = word.conlang
         clean_word = sanitize_ligature(clean_word)
-        ligatures_map[clean_word] = f'{rootdir}/emojis/combined/{word.natural}.svg'
+        ligatures_map[clean_word] = f'{rootdir}/input/emojis/combined/{word.natural}.svg'
     return ligatures_map
