@@ -152,17 +152,63 @@ def add_ligature_substitutions(font: TTFont, ligature_rules):
     # Don't try to manually manipulate GSUB tables
 
     # Create feature file content
+    # Define a class for word boundaries (space and common punctuation)
+    # @boundary = [space period comma exclam question];
+
     feature_content = """languagesystem DFLT dflt;
 languagesystem latn dflt;
+@boundary = [space];
+@ALPHABET = [a b c d e f g h i k l m n o p r s t u w x y z];
 
-feature liga {
+feature rlig {
+    #         # 1. ЗАПРЕЩАЕМ замену, если ПЕРЕД словом стоит буква
+    #     ignore sub @ALPHABET a' b' a' z';
+    #
+    #     # 2. ЗАПРЕЩАЕМ замену, если ПОСЛЕ слова стоит буква
+    #     ignore sub a' b' a' z' @ALPHABET;
+    #
+    #     # 3. ЕСЛИ ПРАВИЛА ВЫШЕ НЕ СРАБОТАЛИ (значит вокруг не буквы), ДЕЛАЕМ ЗАМЕНУ
+    #     sub a' b' a' z' by abaz;
 """
-
+    used_ligs = {}
     for components, ligature_name in ligature_rules:
-        comp_str = ' '.join(components)
-        feature_content += f"    sub {comp_str} by {ligature_name};\n"
+        # Replace "f i" with "f_i" ONLY if it is followed by a boundary character
+        # substitute f i @boundary' by f_i;
 
-    feature_content += "} liga;\n"
+        # Optional: Handle cases where the word is at the very end of the text
+        # (no following character). This requires a separate rule.
+        # substitute f i' by f_i;
+        comp_str = ' '.join(components)
+        comp_str_w_apostrophes = (comp_str + ' ').replace(' ', "' ")  # '\' '.join(components)
+        lig_name = '_'.join(components)
+        if lig_name in used_ligs:
+            continue
+        used_ligs[lig_name] = True
+        #     sub @boundary a' b' a' z' @boundary by abaz;
+        # print('comp_str', comp_str, 'ligature_name', ligature_name)
+        # feature_content += f"    sub {comp_str} by {ligature_name};\n"
+        # feature_content += f"    substitute @boundary' {comp_str} by {ligature_name};\n"
+        # feature_content += f"    substitute {comp_str} @boundary' by {ligature_name};\n"
+        # feature_content += f"    substitute {comp_str}' by {ligature_name};\n"
+
+        # работает с пробелами, но не с началом/концом текста
+        # feature_content += f"    substitute @boundary {comp_str_w_apostrophes} @boundary by {ligature_name};\n"
+
+        feature_content += f"    ignore sub @ALPHABET {comp_str_w_apostrophes} ;\n"
+        feature_content += f"    ignore sub {comp_str_w_apostrophes} @ALPHABET ;\n"
+        feature_content += f"    sub {comp_str_w_apostrophes} by {ligature_name};\n"
+    #         # 1. ЗАПРЕЩАЕМ замену, если ПЕРЕД словом стоит буква
+    #     ignore sub @ALPHABET a' b' a' z';
+    #
+    #     # 2. ЗАПРЕЩАЕМ замену, если ПОСЛЕ слова стоит буква
+    #     ignore sub a' b' a' z' @ALPHABET;
+    #
+    #     # 3. ЕСЛИ ПРАВИЛА ВЫШЕ НЕ СРАБОТАЛИ (значит вокруг не буквы), ДЕЛАЕМ ЗАМЕНУ
+    #     sub a' b' a' z' by abaz;
+
+    # print('feature_content')
+    # print(feature_content)
+    feature_content += "} rlig;\n"
 
     # Write temporary feature file
     import tempfile
@@ -207,6 +253,7 @@ def get_ligatures_map() -> dict[str, str]:
     rootdir = get_project_dir()
     dct = get_dictionary()
     ligatures_map = {}
+    small_dct_for_debug = dct[:2]
     for word in dct:
         clean_word = word.conlang
         clean_word = sanitize_ligature(clean_word)
