@@ -12,7 +12,7 @@ def get_emoji_svg_path(emoji_char: str) -> str:
 def get_emoji_svg_path_or_throw(emoji_char: str) -> str:
     root = get_project_dir()
     codepoint = get_twemoji_codepoint(emoji_char)
-    path = f'{root}/emojis/twemoji/{codepoint}.svg'
+    path = f'{root}/input/emojis/twemoji/{codepoint}.svg'
     if Path(path).exists():
         return path
     raise Exception(f'Could not find svg for {emoji_char} in {path}')
