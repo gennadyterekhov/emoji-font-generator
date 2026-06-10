@@ -6,7 +6,7 @@ from emoji_font_generator.project import get_project_dir
 def get_emoji_svg_path(emoji_char: str) -> str:
     codepoint = get_twemoji_codepoint(emoji_char)
     root = get_project_dir()
-    return f'{root}/emojis/twemoji/{codepoint}.svg'
+    return f'{root}/input/emojis/twemoji/{codepoint}.svg'
 
 
 def get_emoji_svg_path_or_throw(emoji_char: str) -> str:
@@ -20,7 +20,7 @@ def get_emoji_svg_path_or_throw(emoji_char: str) -> str:
 
 def get_grammar_svg_path_or_throw(grammar: str) -> str:
     root = get_project_dir()
-    path = f'{root}/emojis/grammar/{grammar}.svg'
+    path = f'{root}/input/emojis/grammar/{grammar}.svg'
     if Path(path).exists():
         return path
     raise Exception(f'Could not find svg for {grammar} in {path}')
@@ -28,7 +28,7 @@ def get_grammar_svg_path_or_throw(grammar: str) -> str:
 
 def get_logic_svg_path_or_throw(logic: str) -> str:
     root = get_project_dir()
-    path = f'{root}/emojis/logic/{logic}.svg'
+    path = f'{root}/input/emojis/logic/{logic}.svg'
     if Path(path).exists():
         return path
     raise Exception(f'Could not find svg for {logic} in {path}')
