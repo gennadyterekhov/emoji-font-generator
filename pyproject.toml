@@ -10,9 +10,13 @@ dependencies = [
     "fonttools>=4.61.1",
     "picosvg>=0.22.3",
     "pydantic>=2.12.5",
+    "pymorphy2>=0.9.1",
+    "pymorphy2-dicts>=2.4.393442.3710985",
+    "pymorphy2-dicts-ru>=2.4.417127.4579844",
     "pytest>=9.0.2",
     "python-dotenv>=1.2.2",
     "requests>=2.32.5",
+    "setuptools<81",
     "ziafont>=0.11",
 ]
 

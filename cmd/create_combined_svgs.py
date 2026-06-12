@@ -6,6 +6,7 @@ from pathlib import Path
 from emoji_font_generator.combine import combine_wordform
 from emoji_font_generator.input.config import get_dictionary
 from emoji_font_generator.project import get_project_dir
+from emoji_font_generator.russian import get_additional_wordforms
 
 
 def main():
@@ -23,7 +24,11 @@ def main():
                 continue
 
             if w.root1_emoji and w.root2_emoji and w.grammar and w.logic:
-                combine_wordform(w)
+                # if we generate for natural language, get all additional wordforms
+                wfs = get_additional_wordforms(w)
+                for wf in wfs:
+                    combine_wordform(wf)
+
                 print(f'✅')
                 continue
             skipped += 1
