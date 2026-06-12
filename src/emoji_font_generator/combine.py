@@ -8,10 +8,15 @@ import os
 from emoji_font_generator.word import Word
 
 
-def combine_wordform(word: Word):
-    logic = word.get("logic", 'genitive')
-    grammar = word.get("grammar", 'noun')
-    description = word.get('description', '')
+def combine_wordform(word: Word | dict):
+    if type(word) is Word:
+        logic = word.logic
+        grammar = word.grammar
+        description = word.description
+    else:
+        logic = word.get("logic", 'genitive')
+        grammar = word.get("grammar", 'noun')
+        description = word.get('description', '')
 
     if logic == 'genitive' and grammar == 'noun':
         return combine2(word.conlang, [word.root1_emoji, word.root2_emoji, ], description)
@@ -119,8 +124,8 @@ def combine2(wordform: str, emojis: list[str], description=''):
 def save_as_file(root: ET.Element, wordform: str):
     prefix = get_project_dir()
     tree = ET.ElementTree(root)
-    tree.write(f'{prefix}/emojis/combined/temp.xml', encoding='utf-8', xml_declaration=True)
-    os.rename(f'{prefix}/emojis/combined/temp.xml', f'{prefix}/emojis/combined/{wordform}.svg')
+    tree.write(f'{prefix}/input/emojis/combined/temp.xml', encoding='utf-8', xml_declaration=True)
+    os.rename(f'{prefix}/input/emojis/combined/temp.xml', f'{prefix}/input/emojis/combined/{wordform}.svg')
 
 
 def get_svg_root(description='') -> ET.Element:

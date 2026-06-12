@@ -2,6 +2,8 @@
 
 This project allows automated creation of hieroglyphic script using emojis or custom svgs.
 
+So, as a result, your alphabetic text (in a natural language or a conlang) will look like logographic text, without actually having unique unicode characters.
+
 Examples use lirbantu (conlang) with a russian dictionary.
 
 # Idea
