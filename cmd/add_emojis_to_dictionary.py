@@ -6,7 +6,7 @@ from emoji_font_generator.input.config import get_dictionary, save_new_dictionar
 from emoji_font_generator.llm.llm import add_emojis_to_one_word
 
 
-def add_emojis_to_dictionary(llm_config: LlmConfig) -> None:
+def add_emojis_to_dictionary(llm_config: LlmConfig, sleep_for=20) -> None:
     dct = get_dictionary()
 
     # words are not unique (can have several orthographic variants or meaning), we must control uniqueness at app level
@@ -16,7 +16,6 @@ def add_emojis_to_dictionary(llm_config: LlmConfig) -> None:
 
     pos_whitelist = ['num', 'prep', 'interj', 'pron', 'conj']
     spheres_whitelist = ['грамматика']
-    sphere_whitelisted = 'грамматика'
 
     for i, word in enumerate(dct):
         conlang_word = word.conlang
@@ -24,8 +23,9 @@ def add_emojis_to_dictionary(llm_config: LlmConfig) -> None:
 
         if word.pos in pos_whitelist:
             continue
-        if sphere_whitelisted in word.spheres:
-            continue
+        for sph in word.spheres:
+            if sph in spheres_whitelist:
+                continue
 
         if natural_word in unused_words or conlang_word in unused_words:
             continue
@@ -53,8 +53,8 @@ def add_emojis_to_dictionary(llm_config: LlmConfig) -> None:
 
         # let the llm rest a little
         # 20 requests and it's too much for 11s. will try 20
-        print('  waiting 20s')
-        time.sleep(20)
+        print(f'  waiting {sleep_for}s')
+        time.sleep(sleep_for)
         tmp = add_emojis_to_one_word(llm_config, word)
         if tmp == False:
             print('  got 429. need to slow down')

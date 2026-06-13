@@ -19,10 +19,10 @@ def combine_wordform(word: Word | dict):
         description = word.get('description', '')
 
     if logic == 'genitive' and grammar == 'noun':
-        return combine2(word.conlang, [word.root1_emoji, word.root2_emoji, ], description)
+        return combine2(word.conlang, [word.root1_emoji, word.root2_emoji, ], description, grammar)
 
     if logic == 'accusative' and grammar == 'infinitive':
-        return combine3(word.conlang, [word.root1_emoji, word.root2_emoji, logic], description)
+        return combine3(word.conlang, [word.root1_emoji, word.root2_emoji, logic], description, grammar)
 
     return combine4(
         word.conlang,
@@ -33,10 +33,11 @@ def combine_wordform(word: Word | dict):
             grammar,
         ],
         description,
+        grammar
     )
 
 
-def combine4(wordform: str, emojis: list[str], description=''):
+def combine4(wordform: str, emojis: list[str], description='', grammar: str = ''):
     if len(emojis) != 4:
         raise ValueError('Emojis must have exactly 4 characters')
     root = get_svg_root(description)
@@ -63,10 +64,10 @@ def combine4(wordform: str, emojis: list[str], description=''):
             else:
                 element.set('transform', f'{translate}')
             root.append(element)
-    save_as_file(root, wordform)
+    save_as_file(root, wordform, grammar)
 
 
-def combine3(wordform: str, emojis: list[str], description=''):
+def combine3(wordform: str, emojis: list[str], description='', grammar: str = ''):
     if len(emojis) != 3:
         raise ValueError('Emojis must have exactly 3 characters')
     root = get_svg_root(description)
@@ -93,10 +94,10 @@ def combine3(wordform: str, emojis: list[str], description=''):
             else:
                 element.set('transform', f'{translate}')
             root.append(element)
-    save_as_file(root, wordform)
+    save_as_file(root, wordform, grammar)
 
 
-def combine2(wordform: str, emojis: list[str], description=''):
+def combine2(wordform: str, emojis: list[str], description='', grammar: str = ''):
     if len(emojis) != 2:
         raise ValueError('Emojis must have exactly 2 characters')
     root = get_svg_root(description)
@@ -118,14 +119,19 @@ def combine2(wordform: str, emojis: list[str], description=''):
             element.set('transform', f'{translate} {scale}')
             root.append(element)
 
-    save_as_file(root, wordform)
+    save_as_file(root, wordform, grammar)
 
 
-def save_as_file(root: ET.Element, wordform: str):
+def save_as_file(root: ET.Element, wordform: str, grammar: str = ''):
+    """ we need grammar to differentiate hieroglyphs of homograph forms like "коня" рд.п. и вин.п. """
     prefix = get_project_dir()
     tree = ET.ElementTree(root)
     tree.write(f'{prefix}/input/emojis/combined/temp.xml', encoding='utf-8', xml_declaration=True)
-    os.rename(f'{prefix}/input/emojis/combined/temp.xml', f'{prefix}/input/emojis/combined/{wordform}.svg')
+    if grammar:
+        os.rename(f'{prefix}/input/emojis/combined/temp.xml',
+                  f'{prefix}/input/emojis/combined/{wordform}_{grammar}.svg')
+    else:
+        os.rename(f'{prefix}/input/emojis/combined/temp.xml', f'{prefix}/input/emojis/combined/{wordform}.svg')
 
 
 def get_svg_root(description='') -> ET.Element:

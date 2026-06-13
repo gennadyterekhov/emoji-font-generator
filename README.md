@@ -50,7 +50,9 @@ resulting svg:
     - LLM_MODEL_NAME
   - example prompt is in `input/llm/prompt_for_1_word.md`
 - download emoji svgs (`cmd/download_all_emoji_svgs_from_twemoji.py`)
-- if needed, create custom svgs if emojis are not enough. this site is handy https://text-to-svg.com/
+- if needed, create custom svgs if emojis are not enough.
+  - this site is handy https://text-to-svg.com/
+  - use `cmd/font_to_svgs.py` to convert a font to a list of svgs
 - create combined svgs prom parts, according to the logic (`cmd/create_combined_svgs.py`)
 - move your font to `input/fonts/input_font.ttf`. you can use any font as a 'base', so that any other characters are printable
 - add ligatures for hieroglyphs (`cmd/add_ligatures.py`) . font will be saved in `output/fonts/output_font.ttf`
